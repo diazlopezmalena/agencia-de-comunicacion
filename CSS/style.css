@@ -96,9 +96,8 @@ header nav div a img {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 95vh 70px auto auto 90vh;
+    grid-template-rows: 95vh auto auto 90vh;
     grid-template-areas: "presentacion"
-                         "separador"
                          "servicios"
                          "clientes"
                          "contacto";
@@ -198,19 +197,6 @@ header nav div a img {
     border-radius: 5px;
 }
 
-.rayoSeparador {
-
-    background-image: url("../images/rayo.png");
-    grid-area: separador;
-    background-size: 120px;
-    height: auto;
-    z-index: 3;
-    margin-top: -40px;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
-
 /***Sevicios***/
 
 .services {
@@ -230,7 +216,7 @@ header nav div a img {
 
 .services h2 {
     grid-area: encabezado;
-
+    margin: 40px;
 }
 
 .services p, .services h3 {
