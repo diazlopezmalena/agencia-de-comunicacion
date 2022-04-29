@@ -5,9 +5,10 @@
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 95vh auto auto 90vh;
+    grid-template-rows: 95vh auto 100vh auto 0vh;
     grid-template-areas: "presentacion"
                          "servicios"
+                         "adn"
                          "clientes"
                          "contacto";
 
@@ -68,7 +69,6 @@
                 #subtitle {
                     font-family: $font-principal;
                     font-style: normal;
-                    font-size: 16px;
                     font-size: 1.2vw;
                     color: rgb(0, 0, 0);
                     padding-left: 30px;
@@ -121,6 +121,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        margin-bottom: 3vw;
     
         h2 {
             grid-area: encabezado;
@@ -406,4 +407,167 @@
 
 
     }
+
+    /** ADN **/
+    .adn {
+        grid-area: adn;
+        color: #fff;
+        background: linear-gradient(7deg,#67EBFA,#9BFBE1, #CE97FB);
+        background-size: 400% 400%;
+        padding-bottom: 5vw;
+        text-align: center;        
+
+        .tituloAdn{
+            font-family: $font-secundaria;
+            color: rgba(255, 255, 255, 0.605);
+            font-size: 4vw;
+            font-style: italic;
+            margin: 4vw 0% -2.5vw -4vw;
+        }
+
+        .tituloAdn2 {
+            margin-left: 7vw;
+            font-size: 5vw;
+            color: black;
+            font-family: $font-principal;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            margin-top: 3vw;
+            font-family: $font-principal;
+            font-size: 5vw;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                height: 25vw;
+                width: 23vw;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.441);
+                border-radius: 15px;
+                padding: 0vh 4vh;
+                margin: 0vh 4vh;
+                border: none;
+                box-shadow: rgba(77, 77, 77, 0.221) 0px 0px 10px;
+
+
+                img {
+                    border-radius: 100px;
+                    width: 7vw;
+                    margin: 1vw;
+                }
+
+                h4 {
+                    color: #000;
+                    font-size: 1.5vw;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: black;
+                    font-size: 1.2vw;
+                    text-align: justify;
+                    word-wrap: break-word;
+                    hyphens: auto;
+                }
+            }
+        }
+    }
+
+    /** Clientes: en partial _carousel **/
+
+    /** Contacto **/
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+
+        .titulo1{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgba(255, 255, 255, 0.605);
+            font-size: 40px;
+            font-style: italic;
+            margin-bottom: -35px;
+            margin-left: -15px;
+        }
+
+        .titulo2{
+            margin-top: 3vh;
+            font-size: 65px;
+        }
+    }
+
+    .contactoFlex{
+        background-color: #000;
+
+        .sede, .email, .whatsapp{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2vh;
+            }
+
+            p, h3, i{
+                color: #fff;
+                line-height: 1.2;
+                
+                .a1{
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 1s;
+
+                    &:hover{
+                        color: #CE97FB;
+                    }
+                }
+
+                .a2{
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 1s;
+
+                    &:hover{
+                        color: #9BFBE1;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*FOOTER*/
+.footerDiv {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: $font-principal;
+
+    .divFooter1 {
+        flex-direction: column;
+        justify-items: start;
+
+        .logo {
+            width: 3vw;
+        }
+
+        .divFooter1div1 {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5vw;
+        }
+    }
+
 }

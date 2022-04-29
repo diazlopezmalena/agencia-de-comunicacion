@@ -27,6 +27,7 @@
   .mainHome .services .servicesContenido:hover p, .mainHome .services .servicesPlaneacion:hover p, .mainHome .services .servicesWeb:hover p, .mainHome .services .servicesPubli:hover p, .mainHome .services .servicesPr:hover p, .mainHome .services .servicesEventos:hover p, .mainHome .services .servicesDigital:hover p, .mainHome .services .servicesProdu:hover p {
     opacity: 1; }
 
+/* LINEAS HORIZONTALES */
 * {
   padding: 0px;
   margin: 0px;
@@ -65,7 +66,7 @@ header {
     width: 4vw;
     margin-left: 20px; }
 
-.whatsapp {
+.whatsappNM {
   width: 4.5vw;
   position: fixed;
   bottom: 20px;
@@ -97,10 +98,13 @@ header {
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 95vh auto auto 90vh;
-  grid-template-areas: "presentacion" "servicios" "clientes" "contacto";
+  grid-template-rows: 95vh auto 100vh auto 0vh;
+  grid-template-areas: "presentacion" "servicios" "adn" "clientes" "contacto";
   /** Presentación **/
-  /** Sevicios **/ }
+  /** Sevicios **/
+  /** ADN **/
+  /** Clientes: en partial _carousel **/
+  /** Contacto **/ }
   .mainHome .presentacion {
     grid-area: presentacion;
     width: 100%;
@@ -150,7 +154,6 @@ header {
         .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer #subtitle {
           font-family: "Plus Jakarta Sans", sans-serif;
           font-style: normal;
-          font-size: 16px;
           font-size: 1.2vw;
           color: black;
           padding-left: 30px; }
@@ -181,6 +184,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 3vw;
     /*** Sevicios: animaciones ***/
     /*** Sevicios: cards y hover ***/ }
     .mainHome .services h2 {
@@ -311,6 +315,117 @@ header {
       animation: movimientoinverso 2s; }
     .mainHome .services .servicesProdu:hover {
       border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1; }
+  .mainHome .adn {
+    grid-area: adn;
+    color: #fff;
+    background: linear-gradient(7deg, #67EBFA, #9BFBE1, #CE97FB);
+    background-size: 400% 400%;
+    padding-bottom: 5vw;
+    text-align: center; }
+    .mainHome .adn .tituloAdn {
+      font-family: "Times New Roman", Times, serif;
+      color: rgba(255, 255, 255, 0.605);
+      font-size: 4vw;
+      font-style: italic;
+      margin: 4vw 0% -2.5vw -4vw; }
+    .mainHome .adn .tituloAdn2 {
+      margin-left: 7vw;
+      font-size: 5vw;
+      color: black;
+      font-family: "Plus Jakarta Sans", sans-serif; }
+    .mainHome .adn div {
+      display: flex;
+      justify-content: center;
+      margin-top: 3vw;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 5vw; }
+      .mainHome .adn div .card {
+        display: flex;
+        flex-direction: column;
+        height: 25vw;
+        width: 23vw;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.441);
+        border-radius: 15px;
+        padding: 0vh 4vh;
+        margin: 0vh 4vh;
+        border: none;
+        box-shadow: rgba(77, 77, 77, 0.221) 0px 0px 10px; }
+        .mainHome .adn div .card img {
+          border-radius: 100px;
+          width: 7vw;
+          margin: 1vw; }
+        .mainHome .adn div .card h4 {
+          color: #000;
+          font-size: 1.5vw;
+          font-weight: 600; }
+        .mainHome .adn div .card p {
+          color: black;
+          font-size: 1.2vw;
+          text-align: justify;
+          word-wrap: break-word;
+          hyphens: auto; }
+  .mainHome .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000; }
+    .mainHome .contacto .titulo1 {
+      font-family: 'Times New Roman', Times, serif;
+      color: rgba(255, 255, 255, 0.605);
+      font-size: 40px;
+      font-style: italic;
+      margin-bottom: -35px;
+      margin-left: -15px; }
+    .mainHome .contacto .titulo2 {
+      margin-top: 3vh;
+      font-size: 65px; }
+  .mainHome .contactoFlex {
+    background-color: #000; }
+    .mainHome .contactoFlex .sede, .mainHome .contactoFlex .email, .mainHome .contactoFlex .whatsapp {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center; }
+      .mainHome .contactoFlex .sede div, .mainHome .contactoFlex .email div, .mainHome .contactoFlex .whatsapp div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vh; }
+      .mainHome .contactoFlex .sede p, .mainHome .contactoFlex .sede h3, .mainHome .contactoFlex .sede i, .mainHome .contactoFlex .email p, .mainHome .contactoFlex .email h3, .mainHome .contactoFlex .email i, .mainHome .contactoFlex .whatsapp p, .mainHome .contactoFlex .whatsapp h3, .mainHome .contactoFlex .whatsapp i {
+        color: #fff;
+        line-height: 1.2; }
+        .mainHome .contactoFlex .sede p .a1, .mainHome .contactoFlex .sede h3 .a1, .mainHome .contactoFlex .sede i .a1, .mainHome .contactoFlex .email p .a1, .mainHome .contactoFlex .email h3 .a1, .mainHome .contactoFlex .email i .a1, .mainHome .contactoFlex .whatsapp p .a1, .mainHome .contactoFlex .whatsapp h3 .a1, .mainHome .contactoFlex .whatsapp i .a1 {
+          text-decoration: none;
+          color: #fff;
+          transition: 1s; }
+          .mainHome .contactoFlex .sede p .a1:hover, .mainHome .contactoFlex .sede h3 .a1:hover, .mainHome .contactoFlex .sede i .a1:hover, .mainHome .contactoFlex .email p .a1:hover, .mainHome .contactoFlex .email h3 .a1:hover, .mainHome .contactoFlex .email i .a1:hover, .mainHome .contactoFlex .whatsapp p .a1:hover, .mainHome .contactoFlex .whatsapp h3 .a1:hover, .mainHome .contactoFlex .whatsapp i .a1:hover {
+            color: #CE97FB; }
+        .mainHome .contactoFlex .sede p .a2, .mainHome .contactoFlex .sede h3 .a2, .mainHome .contactoFlex .sede i .a2, .mainHome .contactoFlex .email p .a2, .mainHome .contactoFlex .email h3 .a2, .mainHome .contactoFlex .email i .a2, .mainHome .contactoFlex .whatsapp p .a2, .mainHome .contactoFlex .whatsapp h3 .a2, .mainHome .contactoFlex .whatsapp i .a2 {
+          text-decoration: none;
+          color: #fff;
+          transition: 1s; }
+          .mainHome .contactoFlex .sede p .a2:hover, .mainHome .contactoFlex .sede h3 .a2:hover, .mainHome .contactoFlex .sede i .a2:hover, .mainHome .contactoFlex .email p .a2:hover, .mainHome .contactoFlex .email h3 .a2:hover, .mainHome .contactoFlex .email i .a2:hover, .mainHome .contactoFlex .whatsapp p .a2:hover, .mainHome .contactoFlex .whatsapp h3 .a2:hover, .mainHome .contactoFlex .whatsapp i .a2:hover {
+            color: #9BFBE1; }
+
+/*FOOTER*/
+.footerDiv {
+  height: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Plus Jakarta Sans", sans-serif; }
+  .footerDiv .divFooter1 {
+    flex-direction: column;
+    justify-items: start; }
+    .footerDiv .divFooter1 .logo {
+      width: 3vw; }
+    .footerDiv .divFooter1 .divFooter1div1 {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5vw; }
 
 /*** Clientes - Carousel ***/
 .clients {
@@ -318,7 +433,8 @@ header {
   padding: 40px 0px;
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 2vw 0vw 8vw 0vw; }
 
 .clients h2 {
   margin-bottom: 60px; }
@@ -415,3 +531,172 @@ header {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.footerDiv {
+  background-color: #0e0e0e;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  padding: 5vh 0 2vh 0; }
+  .footerDiv .divFooter1 {
+    display: flex;
+    flex-direction: column; }
+    .footerDiv .divFooter1 a {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+      text-decoration: none; }
+      .footerDiv .divFooter1 a p {
+        color: #dbdada;
+        font-size: 20px;
+        font-weight: 600;
+        transition: 1s; }
+        .footerDiv .divFooter1 a p:hover {
+          color: #CE97FB; }
+    .footerDiv .divFooter1 p {
+      color: #dbdada;
+      font-size: 14px;
+      line-height: 1.5; }
+  .footerDiv .divFooter2 {
+    display: flex;
+    flex-direction: column; }
+    .footerDiv .divFooter2 p {
+      color: #dbdada;
+      font-size: 16px;
+      font-weight: 600; }
+    .footerDiv .divFooter2 .l1 {
+      transition: 1s;
+      text-decoration: none;
+      color: #dbdada;
+      font-size: 12px; }
+      .footerDiv .divFooter2 .l1:hover {
+        color: #FDDF7E; }
+    .footerDiv .divFooter2 .l2 {
+      transition: 1s;
+      text-decoration: none;
+      color: #dbdada;
+      font-size: 12px; }
+      .footerDiv .divFooter2 .l2:hover {
+        color: #FAA990; }
+    .footerDiv .divFooter2 .l3 {
+      transition: 1s;
+      text-decoration: none;
+      color: #dbdada;
+      font-size: 12px; }
+      .footerDiv .divFooter2 .l3:hover {
+        color: #9BFBE1; }
+    .footerDiv .divFooter2 .l4 {
+      transition: 1s;
+      text-decoration: none;
+      color: #dbdada;
+      font-size: 12px; }
+      .footerDiv .divFooter2 .l4:hover {
+        color: #CE97FB; }
+    .footerDiv .divFooter2 i {
+      transition: 1s;
+      color: #dbdada;
+      font-size: 12px; }
+      .footerDiv .divFooter2 i:hover {
+        color: #fff; }
+  .footerDiv .divFooter3 {
+    display: flex;
+    flex-direction: column; }
+    .footerDiv .divFooter3 p {
+      color: #dbdada;
+      font-size: 16px;
+      font-weight: 600; }
+    .footerDiv .divFooter3 .divFooter3div1 {
+      display: flex;
+      flex-direction: column; }
+      .footerDiv .divFooter3 .divFooter3div1 .redesSocialesLogo {
+        color: #dbdada;
+        height: 2vh; }
+      .footerDiv .divFooter3 .divFooter3div1 .e1 {
+        transition: 1s;
+        text-decoration: none;
+        color: #dbdada;
+        font-size: 12px; }
+        .footerDiv .divFooter3 .divFooter3div1 .e1:hover {
+          color: #CE97FB; }
+      .footerDiv .divFooter3 .divFooter3div1 .e2 {
+        transition: 1s;
+        text-decoration: none;
+        color: #dbdada;
+        font-size: 12px; }
+        .footerDiv .divFooter3 .divFooter3div1 .e2:hover {
+          color: #F6A5EB; }
+      .footerDiv .divFooter3 .divFooter3div1 .e3 {
+        transition: 1s;
+        text-decoration: none;
+        color: #dbdada;
+        font-size: 12px; }
+        .footerDiv .divFooter3 .divFooter3div1 .e3:hover {
+          color: #FDDF7E; }
+      .footerDiv .divFooter3 .divFooter3div1 .e4 {
+        transition: 1s;
+        text-decoration: none;
+        color: #dbdada;
+        font-size: 12px; }
+        .footerDiv .divFooter3 .divFooter3div1 .e4:hover {
+          color: #FAA990; }
+
+.credito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e0e0e; }
+  .credito .divLineal {
+    width: 70%;
+    height: 0;
+    border-top: 0.1vh;
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
+    margin: 0.5vh 0 0 0;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border-color: #313131;
+    border-style: solid; }
+  .credito .copyright {
+    font-size: 12px; }
+  .credito p {
+    margin: 1vh 0;
+    color: #dbdada;
+    font-size: 14px; }
+    .credito p .a1 {
+      color: #dbdada;
+      text-decoration: none;
+      transition: 1s; }
+      .credito p .a1:hover {
+        color: #9BFBE1; }
+    .credito p .a2 {
+      color: #dbdada;
+      text-decoration: none;
+      transition: 1s; }
+      .credito p .a2:hover {
+        color: #FAA990; }
+
+/*MEDIA QUERY - DESKTOP*/
+@media screen and (min-width: 769px) {
+  /*ADN*/
+  /*CONTACTO*/
+  .contacto {
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0; }
+  .contactoFlex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "sede email wpp";
+    padding-bottom: 10vh; }
+    .contactoFlex .sede {
+      grid-area: sede; }
+    .contactoFlex .email {
+      grid-area: email; }
+    .contactoFlex .whatsapp {
+      grid-area: wpp; }
+    .contactoFlex p {
+      font-size: 18px; } }

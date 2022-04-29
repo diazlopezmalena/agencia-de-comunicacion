@@ -1,0 +1,46 @@
+/*MEDIA QUERY - DESKTOP*/
+@media screen and (min-width: 769px){
+
+    /*ADN*/
+
+
+
+
+
+    /*CONTACTO*/
+    .contacto{
+        justify-content: center;
+        align-items: center;
+        padding: 10vh 0;
+    }
+
+    .contactoFlex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "sede email wpp";
+        padding-bottom: 10vh;
+
+        .sede{
+            grid-area: sede;
+        }
+
+        .email{
+            grid-area: email;
+        }
+
+        .whatsapp{
+            grid-area: wpp;
+        }
+
+        p{
+            font-size: 18px;
+        }
+    }
+
+
+ 
+
+
+
+}

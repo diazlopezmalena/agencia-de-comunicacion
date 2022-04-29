@@ -1,10 +1,17 @@
-//Mixin llamado en el partial _buttons
+//Mixin llamado en el partial _footer
 
-/* @mixin botonEstilo($anchoBoton, $altoBoton, $colorFondoBoton, $colorTextoBoton, $borderRadiusBoton, $borderColorBoton){
-    width: $anchoBoton;
-    height: $altoBoton;
-    background-color: $colorFondoBoton;
-    color: $colorTextoBoton;
-    border-radius: $borderRadiusBoton;
-    border-color: $borderColorBoton;
+/* LINEAS HORIZONTALES */
+@mixin divLineal ($ancho, $alto, $borderTop, $borderLeft, $margin){
+    width: $ancho;
+    height: $alto;
+    border-top: $borderTop;
+    border-left: $borderLeft;
+    border-bottom: 0;
+    border-right: 0;
+    margin: $margin;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border-color: rgb(49, 49, 49);
+    border-style: solid;
 }

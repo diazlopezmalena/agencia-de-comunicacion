@@ -1,0 +1,209 @@
+.footerDiv{
+    background-color: rgb(14, 14, 14);
+    width: 100%;
+    display: flex;
+    align-items: start;
+    padding: 5vh 0 2vh 0;
+    
+    .divFooter1{
+        display: flex;
+        flex-direction: column;
+    
+        a{
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            text-decoration: none;
+
+            p{
+                color: rgb(219, 218, 218);
+                font-size: 20px;
+                font-weight: 600;
+                transition: 1s;
+
+                &:hover{
+                    color: #CE97FB;
+                }
+            }
+        }
+
+        p{
+            color: rgb(219, 218, 218);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+    
+    .divFooter2{
+        display: flex;
+        flex-direction: column;
+
+            p{
+                color: rgb(219, 218, 218);
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .l1{
+                transition: 1s;
+                text-decoration: none;
+                color: rgb(219, 218, 218);
+                font-size: 12px;
+    
+                &:hover{
+                    color: #FDDF7E;
+                }
+            }
+
+            .l2{
+                transition: 1s;
+                text-decoration: none;
+                color: rgb(219, 218, 218);
+                font-size: 12px;
+    
+                &:hover{
+                    color: #FAA990;
+                }
+            }
+
+            .l3{
+                transition: 1s;
+                text-decoration: none;
+                color: rgb(219, 218, 218);
+                font-size: 12px;
+    
+                &:hover{
+                    color: #9BFBE1;
+                }
+            }
+
+            .l4{
+                transition: 1s;
+                text-decoration: none;
+                color: rgb(219, 218, 218);
+                font-size: 12px;
+    
+                &:hover{
+                    color: #CE97FB;
+                }
+            }
+
+            i{
+                transition: 1s;
+                color: rgb(219, 218, 218);
+                font-size: 12px;
+    
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    
+    .divFooter3{
+        display: flex;
+        flex-direction: column;
+
+        p{
+            color: rgb(219, 218, 218);
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .divFooter3div1{
+            display: flex;
+            flex-direction: column;
+        
+    
+            .redesSocialesLogo{
+                color: rgb(219, 218, 218);
+                height: 2vh;
+            }
+
+            .e1{
+                transition: 1s;
+                text-decoration: none;
+                color: rgb(219, 218, 218);
+                font-size: 12px;
+    
+                &:hover{
+                    color: #CE97FB;
+                }
+            }
+
+            .e2{
+                transition: 1s;
+                text-decoration: none;
+                color: rgb(219, 218, 218);
+                font-size: 12px;
+    
+                &:hover{
+                    color: #F6A5EB;
+                }
+            }
+
+            .e3{
+                transition: 1s;
+                text-decoration: none;
+                color: rgb(219, 218, 218);
+                font-size: 12px;
+    
+                &:hover{
+                    color: #FDDF7E;
+                }
+            }
+
+            .e4{
+                transition: 1s;
+                text-decoration: none;
+                color: rgb(219, 218, 218);
+                font-size: 12px;
+    
+                &:hover{
+                    color: #FAA990;
+                }
+            }
+        }
+    }
+}
+
+.credito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 14, 14);
+
+    .divLineal{
+        @include divLineal(70%, 0, 0.1vh, 0, 0.5vh 0 0 0)
+    }
+
+    .copyright{
+        font-size: 12px;
+    }
+    
+    p{
+        margin: 1vh 0;
+        color: rgb(219, 218, 218);
+        font-size: 14px;
+
+        .a1{
+            color: rgb(219, 218, 218);
+            text-decoration: none;
+            transition: 1s;
+
+            &:hover{
+                color: #9BFBE1;
+            }
+        }
+
+        .a2{
+            color: rgb(219, 218, 218);
+            text-decoration: none;
+            transition: 1s;
+
+            &:hover{
+                color: #FAA990;
+            }
+        }
+    }
+}
