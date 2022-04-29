@@ -1,0 +1,42 @@
+$color-principal: white;
+$background-color-principal: black;
+
+//placeholders utilizados con extend en partial _grid *servicios*
+
+%titulosServicios {
+    position: absolute;
+    bottom: 2.5vw;
+    opacity: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+%servicesContenidoGif {
+    height: 7vw;
+    width: 7vw;
+    position: absolute;
+    top: 3vw;
+    opacity: 1;
+
+    img {
+        border-radius: 100px;
+    }
+}
+
+%textoServicios {
+    position: relative;
+    opacity: 0;
+    padding: 15px;
+}
+
+%servicesContenidohover {
+    animation: movimiento 2s;
+
+    .servicesContenidoGif, h3 {
+        opacity: 0;
+    }
+
+    p {
+        opacity: 1;
+    }
+}

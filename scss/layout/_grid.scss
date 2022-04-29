@@ -1,0 +1,409 @@
+/* HOME */
+
+.mainHome {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 95vh auto auto 90vh;
+    grid-template-areas: "presentacion"
+                         "servicios"
+                         "clientes"
+                         "contacto";
+
+
+    /** Presentación **/
+
+    .presentacion {
+        grid-area: presentacion;
+        width: 100%;
+        color: #fff;
+        background: linear-gradient(45deg,#67EBFA,#9BFBE1,#FDDF7E,#FAA990, #F6A5EB, #CE97FB);
+        background-size: 400% 400%;
+        position: relative;
+        animation: cambiar 10s ease-out infinite;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 30px;
+    
+        @keyframes cambiar{
+            0%{background-position: 0 50%;}
+            50%{background-position: 100% 50%;}
+            100%{background-position: 0 50%;}
+        }
+
+        .otraPresentacionH {
+            width: 50%;
+            align-self: flex-start;
+            padding-top: 5vw;
+            
+            p {
+            font-family: $font-secundaria;
+            color: rgba(255, 255, 255, 0.605);
+            font-size: 5vw;
+            font-style: italic;
+            margin-bottom: -2.5vw;
+            margin-left: -15px;
+            }
+
+            h1 {
+                font-size: 5vw;
+                color: black;
+                font-weight: 900;
+                font-family: $font-principal;
+                line-height: 0.9;
+            }
+
+            .otraPresentacionHContainer {
+                display: flex;
+                height: auto;
+                width: 70%;
+                justify-content: center;
+                padding: 1vw;
+                background-color: rgba(255, 255, 255, 0.441);
+                border-radius: 15px;
+                margin-top: 9vw;
+
+                #subtitle {
+                    font-family: $font-principal;
+                    font-style: normal;
+                    font-size: 16px;
+                    font-size: 1.2vw;
+                    color: rgb(0, 0, 0);
+                    padding-left: 30px;
+                }
+
+                #otraPresentacionHContainerGif {
+                    width: 3.5vw;
+                    height: 3.5vw;
+    
+                    img {
+                        border-radius: 100px;
+                    }
+                }
+
+            }
+
+            
+        }
+
+        .otraPresentacionDownald {
+            text-align: center;
+            align-self: flex-end;
+            padding-bottom: 60px;
+        
+            .otraPresentacionDownaldGif {
+                width: 23vw;
+                height: 23vw;
+                box-shadow: rgba(0, 0, 0, 0.612) 10px 10px 10px;
+            
+                img {
+                    min-width: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    /** Sevicios **/
+
+    .services {
+        grid-area: servicios;
+        padding: 30px 10px;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-template-rows: auto 23vw 23vw;
+        grid-template-areas: "encabezado encabezado encabezado encabezado"
+                             "uno dos tres cuatro"
+                             "cinco seis siete ocho";
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    
+        h2 {
+            grid-area: encabezado;
+            margin: 40px;
+        }
+
+        /*** Sevicios: animaciones ***/
+
+        p, h3 {
+            transition: all 100ms;
+        }
+
+        @keyframes movimiento {
+            from {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5 !important;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes movimientoinverso {
+            from {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5 !important;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /*** Sevicios: cards y hover ***/
+
+        .servicesContenido {
+            grid-area: uno;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            border: solid 6px transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            animation: movimientoinverso 2s;
+        
+            h3 {
+                @extend %titulosServicios;
+            }
+
+            p {
+                @extend %textoServicios;
+            }
+
+            .servicesContenidoGif {
+                @extend %servicesContenidoGif; 
+            }
+
+        }
+
+        .servicesContenido:hover {
+            border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1;
+            @extend %servicesContenidohover;            
+        }
+
+        .servicesPlaneacion {
+            grid-area: dos;
+            width: 100%;
+            height: 100%;
+            border: solid 6px transparent;
+            padding-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            animation: movimientoinverso 2s;
+            
+            h3 {
+                @extend %titulosServicios;
+            }
+
+            p {
+                @extend %textoServicios;
+            }
+
+            .servicesContenidoGif {
+                @extend %servicesContenidoGif; 
+            }
+
+        }
+
+        .servicesPlaneacion:hover {
+            border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1;
+            @extend %servicesContenidohover;
+        }
+
+        .servicesWeb {
+            grid-area: tres;
+            width: 100%;
+            height: 100%;
+            border: solid 6px transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            animation: movimientoinverso 2s;
+
+            h3 {
+                @extend %titulosServicios;
+            }
+
+            p {
+                @extend %textoServicios;
+            }
+
+            .servicesContenidoGif {
+                @extend %servicesContenidoGif; 
+            }
+        }
+
+        .servicesWeb:hover {
+            border-image: linear-gradient(to bottom, #9BFBE1, #F6A5EB 100%) 1;
+            @extend %servicesContenidohover;
+        }
+
+        .servicesPubli {
+            grid-area: cuatro;
+            width: 100%;
+            height: 100%;
+            border: solid 6px transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            animation: movimientoinverso 2s;
+
+            h3 {
+                @extend %titulosServicios;
+            }
+
+            p {
+                @extend %textoServicios;
+            }
+
+            .servicesContenidoGif {
+                @extend %servicesContenidoGif; 
+            }
+        }
+
+        .servicesPubli:hover {
+            border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1;
+            @extend %servicesContenidohover;
+        }
+
+        .servicesPr {
+            grid-area: cinco;
+            width: 100%;
+            height: 100%;
+            border: solid 6px transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            animation: movimientoinverso 2s;
+            padding-top: 5px;
+
+            h3 {
+                @extend %titulosServicios;
+            }
+
+            p {
+                @extend %textoServicios;
+            }
+
+            .servicesContenidoGif {
+                @extend %servicesContenidoGif; 
+            }
+        }
+
+        .servicesPr:hover {
+            border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1;
+            @extend %servicesContenidohover;
+        }
+
+        .servicesEventos {
+            grid-area: seis;
+            width: 100%;
+            height: 100%;
+            border: solid 6px transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            animation: movimientoinverso 2s;
+
+            h3 {
+                @extend %titulosServicios;
+            }
+
+            p {
+                @extend %textoServicios;
+            }
+
+            .servicesContenidoGif {
+                @extend %servicesContenidoGif; 
+            }
+        }
+
+        .servicesEventos:hover {
+            border-image: linear-gradient(to bottom, #9BFBE1, #F6A5EB 100%) 1;
+            @extend %servicesContenidohover;
+        }
+
+        .servicesDigital {
+            grid-area: siete;
+            width: 100%;
+            height: 100%;
+            border: solid 6px transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            animation: movimientoinverso 2s;
+
+            h3 {
+                @extend %titulosServicios;
+            }
+
+            p {
+                @extend %textoServicios;
+            }
+
+            .servicesContenidoGif {
+                @extend %servicesContenidoGif; 
+            }
+        }
+
+        .servicesDigital:hover {
+            border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1;
+            @extend %servicesContenidohover;
+        }
+
+        .servicesProdu {
+            grid-area: ocho;
+            width: 100%;
+            height: 100%;
+            border: solid 6px transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            animation: movimientoinverso 2s;
+
+            h3 {
+                @extend %titulosServicios;
+            }
+
+            p {
+                @extend %textoServicios;
+            }
+
+            .servicesContenidoGif {
+                @extend %servicesContenidoGif; 
+            }
+        }
+
+        .servicesProdu:hover {
+            border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1;
+            @extend %servicesContenidohover;
+        }
+
+
+    }
+}

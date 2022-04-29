@@ -1,0 +1,10 @@
+//Mixin llamado en el partial _buttons
+
+/* @mixin botonEstilo($anchoBoton, $altoBoton, $colorFondoBoton, $colorTextoBoton, $borderRadiusBoton, $borderColorBoton){
+    width: $anchoBoton;
+    height: $altoBoton;
+    background-color: $colorFondoBoton;
+    color: $colorTextoBoton;
+    border-radius: $borderRadiusBoton;
+    border-color: $borderColorBoton;
+}

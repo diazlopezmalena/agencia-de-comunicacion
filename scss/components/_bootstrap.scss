@@ -1,0 +1,32 @@
+/* NAV BS */
+
+.bg-dark {
+    background-color: rgb(0, 0, 0) !important;
+    height: 5vw;
+    border-bottom: solid 1px rgb(39, 39, 39);
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+
+    .navBsUl {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        font-size: 1.1vw;
+        font-family: $font-principal;
+
+        li {
+            padding: 1.5%;
+
+            a {
+                border-top: solid 3px transparent;
+            }
+        
+            a:hover {
+                border-top: solid 3px pink;
+            }
+        }
+    }
+}
+
+    
+
+

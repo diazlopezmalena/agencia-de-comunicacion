@@ -1,0 +1,14 @@
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+
+    /** Logo **/
+
+    nav div a img {
+        width: 4vw;
+        margin-left: 20px;
+    }
+}
+
+//nav con BS en partial components/_bootstrap
