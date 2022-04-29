@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .mainHome .services .servicesContenido h3, .mainHome .services .servicesPlaneacion h3, .mainHome .services .servicesWeb h3, .mainHome .services .servicesPubli h3, .mainHome .services .servicesPr h3, .mainHome .services .servicesEventos h3, .mainHome .services .servicesDigital h3, .mainHome .services .servicesProdu h3 {
   position: absolute;
-  bottom: 2.5vw;
+  bottom: 2vw;
   opacity: 1;
   text-align: center;
   padding: 20px; }
@@ -43,7 +43,7 @@ body {
   body p {
     font-family: "Plus Jakarta Sans", sans-serif;
     color: white;
-    font-size: 1.2vw; }
+    font-size: 1.1vw; }
   body h2 {
     font-family: "Plus Jakarta Sans", sans-serif;
     color: white;
@@ -53,7 +53,7 @@ body {
   body h3 {
     font-family: "Plus Jakarta Sans", sans-serif;
     color: white;
-    font-size: 2.3vw;
+    font-size: 1.9vw;
     font-weight: bolder;
     text-shadow: #424242 0px 0px 10px; }
 
@@ -179,7 +179,7 @@ header {
     background-color: black;
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
-    grid-template-rows: auto 23vw 23vw;
+    grid-template-rows: auto 20vw 20vw;
     grid-template-areas: "encabezado encabezado encabezado encabezado" "uno dos tres cuatro" "cinco seis siete ocho";
     align-items: center;
     justify-content: center;
@@ -679,24 +679,40 @@ header {
         color: #FAA990; }
 
 /*MEDIA QUERY - DESKTOP*/
-@media screen and (min-width: 769px) {
-  /*ADN*/
-  /*CONTACTO*/
-  .contacto {
-    justify-content: center;
-    align-items: center;
-    padding: 10vh 0; }
-  .contactoFlex {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "sede email wpp";
-    padding-bottom: 10vh; }
-    .contactoFlex .sede {
-      grid-area: sede; }
-    .contactoFlex .email {
-      grid-area: email; }
-    .contactoFlex .whatsapp {
-      grid-area: wpp; }
-    .contactoFlex p {
-      font-size: 18px; } }
+/*
+@media screen and (min-width: 769px){
+
+
+    //CONTACTO
+    .contacto{
+        justify-content: center;
+        align-items: center;
+        padding: 10vh 0;
+    }
+
+    .contactoFlex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "sede email wpp";
+        padding-bottom: 10vh;
+
+        .sede{
+            grid-area: sede;
+        }
+
+        .email{
+            grid-area: email;
+        }
+
+        .whatsapp{
+            grid-area: wpp;
+        }
+
+        p{
+            font-size: 18px;
+        }
+    }
+    
+}
+*/
