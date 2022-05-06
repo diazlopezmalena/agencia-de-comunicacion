@@ -162,6 +162,8 @@ header {
           height: 3.5vw; }
           .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer #otraPresentacionHContainerGif img {
             border-radius: 100px; }
+      .mainHome .presentacion .otraPresentacionH .presentacionFlecha {
+        visibility: hidden; }
     .mainHome .presentacion .otraPresentacionDownald {
       text-align: center;
       align-self: flex-end;
@@ -715,4 +717,78 @@ header {
     }
     
 }
+
 */
+/* MEDIA QUERY - MOBILE */
+@media only screen and (max-width: 600px) {
+  footer {
+    display: none !important; }
+  header .bg-dark {
+    height: auto; }
+  header nav div a img {
+    width: 18vw;
+    margin-left: 0px; }
+  .mainHome {
+    grid-template-rows: auto auto 100vh auto 0vh; }
+    .mainHome .presentacion {
+      flex-direction: column; }
+      .mainHome .presentacion .otraPresentacionH {
+        width: 100%;
+        padding: 60px 30px 0px 30px;
+        height: 90vh; }
+        .mainHome .presentacion .otraPresentacionH p {
+          font-size: 7vh;
+          margin-left: 0px;
+          margin-bottom: -3.5vh; }
+        .mainHome .presentacion .otraPresentacionH h1 {
+          font-size: 7vh; }
+        .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer {
+          width: 100%;
+          height: 80px; }
+          .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer #subtitle {
+            font-size: 13px;
+            padding-left: 10px;
+            word-wrap: break-word;
+            hyphens: auto; }
+          .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer #otraPresentacionHContainerGif {
+            width: 90px; }
+        .mainHome .presentacion .otraPresentacionH .presentacionFlecha {
+          visibility: visible !important;
+          width: 20%;
+          align-self: flex-end;
+          margin: 10% 40% 0px 40%;
+          opacity: 0.8;
+          animation-name: flecha;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          animation-duration: 1s;
+          animation-delay: 2s; }
+  @keyframes flecha {
+    0% {
+      transform: translate(0px, 0px);
+      opacity: 0.6; }
+    100% {
+      transform: translate(0px, 20px);
+      opacity: 0.4; } }
+      .mainHome .presentacion .otraPresentacionDownald {
+        align-self: center;
+        padding-bottom: 0px; }
+        .mainHome .presentacion .otraPresentacionDownald .otraPresentacionDownaldGif {
+          width: 60vw;
+          height: 60vw; }
+    .mainHome .services {
+      grid-template-columns: 100%;
+      grid-template-rows: auto repeat(8, 70vh);
+      grid-template-areas: "encabezado" "uno" "dos" "tres"  "cuatro" "cinco" "seis" "siete" "ocho"; }
+      .mainHome .services h2 {
+        font-size: 55px;
+        margin: 20px 0px; }
+      .mainHome .services h3 {
+        font-size: 30px;
+        bottom: 12% !important; }
+      .mainHome .services p {
+        font-size: 16px; }
+      .mainHome .services .servicesContenidoGif {
+        height: 150px !important;
+        width: 150px !important;
+        top: 12% !important; } }
