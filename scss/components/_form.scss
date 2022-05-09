@@ -1,0 +1,39 @@
+.formulario {
+    display: none; //pasar a flex ccon js
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.42);
+    position: fixed;
+    top: 1px;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+
+    .formularioForm {
+        width: auto;
+        height: 90%;
+        background-color: white;
+        box-shadow: white 0px 0px 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        iframe {
+            border-radius: 5px;
+        }
+
+        .formularioFormCerrar {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+
+            button {
+                border: solid 2px #faa990;
+                border-radius: 50px;
+                box-shadow: #faa990 0px 0px 10px;
+            }
+        }
+    }
+}

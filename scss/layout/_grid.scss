@@ -5,7 +5,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 95vh auto 100vh auto 0vh;
+    grid-template-rows: 95vh auto 100vh auto 20vh;
     grid-template-areas: "presentacion"
                          "servicios"
                          "adn"
@@ -14,6 +14,22 @@
 
 
     /** Presentación **/
+
+    .contactoBotonFormulario {
+        grid-area: contacto;
+        background-color: #67EBFA;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            padding: 10px;
+            background-color: red;
+            border-radius: 5px;
+        }
+    }
 
     .presentacion {
         grid-area: presentacion;

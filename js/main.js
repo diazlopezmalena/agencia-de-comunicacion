@@ -19,4 +19,16 @@ $(document).ready(function(){
             }
         }]
     });
+
+    let boton = document.getElementById("btn");
+    boton.onclick = () =>{divFormulario.style.display = "flex";}
+
+    let cerrar = () =>{divFormulario.style.display ="none";}
+
+    let divFormulario = document.getElementById("form");
+    let salir = document.getElementById("salir");
+    
+    divFormulario.addEventListener("click", cerrar);
+    salir.addEventListener("click", cerrar);   
+
 });

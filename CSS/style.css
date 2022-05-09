@@ -66,12 +66,16 @@ header {
     width: 4vw;
     margin-left: 20px; }
 
-.whatsappNM {
-  width: 4.5vw;
+.whatsappfijo {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 19; }
+  z-index: 19;
+  filter: drop-shadow(0 0.2vh 0.2vh #797979);
+  color: #fff; }
+
+.whatsappfijo:hover {
+  color: #25D366; }
 
 /* NAV BS */
 .bg-dark {
@@ -98,13 +102,25 @@ header {
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 95vh auto 100vh auto 0vh;
+  grid-template-rows: 95vh auto 100vh auto 20vh;
   grid-template-areas: "presentacion" "servicios" "adn" "clientes" "contacto";
   /** Presentación **/
   /** Sevicios **/
   /** ADN **/
   /** Clientes: en partial _carousel **/
   /** Contacto **/ }
+  .mainHome .contactoBotonFormulario {
+    grid-area: contacto;
+    background-color: #67EBFA;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mainHome .contactoBotonFormulario button {
+      padding: 10px;
+      background-color: red;
+      border-radius: 5px; }
   .mainHome .presentacion {
     grid-area: presentacion;
     width: 100%;
@@ -679,6 +695,37 @@ header {
       transition: 1s; }
       .credito p .a2:hover {
         color: #FAA990; }
+
+.formulario {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.42);
+  position: fixed;
+  top: 1px;
+  z-index: 20;
+  justify-content: center;
+  align-items: center; }
+  .formulario .formularioForm {
+    width: auto;
+    height: 90%;
+    background-color: white;
+    box-shadow: white 0px 0px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .formulario .formularioForm iframe {
+      border-radius: 5px; }
+    .formulario .formularioForm .formularioFormCerrar {
+      position: absolute;
+      right: 10px;
+      top: 5px; }
+      .formulario .formularioForm .formularioFormCerrar button {
+        border: solid 2px #faa990;
+        border-radius: 50px;
+        box-shadow: #faa990 0px 0px 10px; }
 
 /*MEDIA QUERY - DESKTOP*/
 /*

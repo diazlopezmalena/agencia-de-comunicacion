@@ -35,16 +35,16 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                            <a class="nav-link" href="#sectionServices">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/servicios.html">Clientes</a>
+                            <a class="nav-link" href="#sectionAdn">ADN</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/sobremi.html">Staff</a>
+                            <a class="nav-link" href="#sectionClients">Clientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="#sectionContact">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -55,8 +55,8 @@
     <!--MAIN-->
     <!--GRID MAIN Inicio-->
     <main class="mainHome">
-        <div class="whatsappNM">
-            <img src="images/whatsapp.png" alt="">
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=5491133361088&text=%C2%A1Hola%20NM%20Comunicaciones!%20Quiero%20saber%20acerca%20de%20" target="_blank" class="whatsappfijo"><i class="fa-brands fa-whatsapp fa-4x"></i></a>
         </div>
         <div class="presentacion">
             <div class="otraPresentacionH">
@@ -75,12 +75,11 @@
             </div>
             <div class="otraPresentacionDownald" id="downaldBrief">
                 <div class="otraPresentacionDownaldGif">
-                    <a href="images/#brief-NMco.pdf" download="#brief-NMco" target="_blank"
-                        rel="noopener noreferrer"><img src="images/brief.gif" alt=""></a>
+                    <a href="images/brief-NMco.pdf" download="#brief-NMco" target="_blank" rel="noopener noreferrer"><img src="images/brief.gif" alt=""></a>
                 </div>
             </div>
         </div>
-        <div class="services">
+        <div class="services" id="sectionServices">
             <h2 class="animate__animated animate__flipInX animate__slow">Servicios</h2>
             <div class="servicesContenido">
                 <div class="servicesContenidoGif"><img src="images/creacionDeContenido.gif" alt=""></div>
@@ -141,7 +140,7 @@
                     marca. Material imprimible.</p>
             </div>
         </div>
-        <div class="clients">
+        <div class="clients" id="sectionClients">
             <div class="container">
                 <h2>Clientes</h2>
                 <section class="customer-logos slider">
@@ -165,7 +164,7 @@
             </div>
         </div>
         <!--nuestroadn-->
-        <div class="adn">
+        <div class="adn" id="sectionAdn">
             <p class="tituloAdn">Nuestro</p>
             <h2 class="tituloAdn2 h2Black">ADN</h2>
             <div>
@@ -246,6 +245,19 @@
             </div>
         
         </div>-->
+        <div class="contactoBotonFormulario" id="sectionContact">
+            <button id="btn">Formulario</button>
+        </div>
+
+
+        <div class="formulario" id="form">
+            <div class="formularioForm">
+                <div class="formularioFormCerrar">
+                    <button><img src="images/close.png" alt="" id="salir"></button>
+                </div>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdE4C30BsZnl-A2E_O_AhpnBxLMXVuWcMVAoJSM9f41fIBnpQ/viewform?embedded=true" width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footerDiv">
