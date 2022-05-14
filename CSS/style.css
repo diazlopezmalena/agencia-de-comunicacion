@@ -109,27 +109,15 @@ header {
   /** ADN **/
   /** Clientes: en partial _carousel **/
   /** Contacto **/ }
-  .mainHome .contactoBotonFormulario {
-    grid-area: contacto;
-    background-color: #67EBFA;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .mainHome .contactoBotonFormulario button {
-      padding: 10px;
-      background-color: red;
-      border-radius: 5px; }
-  .mainHome .presentacion {
+  .mainHome .presentacionContenedor {
     grid-area: presentacion;
     width: 100%;
     color: #fff;
     background: linear-gradient(45deg, #67EBFA, #9BFBE1, #FDDF7E, #FAA990, #F6A5EB, #CE97FB);
     background-size: 400% 400%;
-    position: relative;
     animation: cambiar 10s ease-out infinite;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 30px; }
@@ -141,24 +129,26 @@ header {
     background-position: 100% 50%; }
   100% {
     background-position: 0 50%; } }
-    .mainHome .presentacion .otraPresentacionH {
+    .mainHome .presentacionContenedor .presentacionH {
       width: 50%;
       align-self: flex-start;
-      padding-top: 5vw; }
-      .mainHome .presentacion .otraPresentacionH p {
+      padding-top: 5vw;
+      position: relative;
+      height: 100%; }
+      .mainHome .presentacionContenedor .presentacionH p {
         font-family: "Times New Roman", Times, serif;
         color: rgba(255, 255, 255, 0.605);
         font-size: 5vw;
         font-style: italic;
         margin-bottom: -2.5vw;
         margin-left: -15px; }
-      .mainHome .presentacion .otraPresentacionH h1 {
+      .mainHome .presentacionContenedor .presentacionH h1 {
         font-size: 5vw;
         color: black;
         font-weight: 900;
         font-family: "Plus Jakarta Sans", sans-serif;
         line-height: 0.9; }
-      .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer {
+      .mainHome .presentacionContenedor .presentacionH .presentacionP {
         display: flex;
         height: auto;
         width: 70%;
@@ -166,29 +156,31 @@ header {
         padding: 1vw;
         background-color: rgba(255, 255, 255, 0.441);
         border-radius: 15px;
-        margin-top: 9vw; }
-        .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer #subtitle {
+        margin-top: 9vw;
+        position: absolute;
+        bottom: 60px; }
+        .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPGif {
+          width: 3.5vw;
+          height: 3.5vw; }
+          .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPGif img {
+            border-radius: 100px; }
+        .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPsubtitulo {
           font-family: "Plus Jakarta Sans", sans-serif;
           font-style: normal;
           font-size: 1.2vw;
           color: black;
           padding-left: 30px; }
-        .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer #otraPresentacionHContainerGif {
-          width: 3.5vw;
-          height: 3.5vw; }
-          .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer #otraPresentacionHContainerGif img {
-            border-radius: 100px; }
-      .mainHome .presentacion .otraPresentacionH .presentacionFlecha {
+      .mainHome .presentacionContenedor .presentacionH .presentacionFlecha {
         visibility: hidden; }
-    .mainHome .presentacion .otraPresentacionDownald {
+    .mainHome .presentacionContenedor .presentacionDescarga {
       text-align: center;
       align-self: flex-end;
       padding-bottom: 60px; }
-      .mainHome .presentacion .otraPresentacionDownald .otraPresentacionDownaldGif {
+      .mainHome .presentacionContenedor .presentacionDescarga .presentacionDescargaGif {
         width: 23vw;
         height: 23vw;
         box-shadow: rgba(0, 0, 0, 0.612) 10px 10px 10px; }
-        .mainHome .presentacion .otraPresentacionDownald .otraPresentacionDownaldGif img {
+        .mainHome .presentacionContenedor .presentacionDescarga .presentacionDescargaGif img {
           min-width: 100%;
           border-radius: 5px; }
   .mainHome .services {
@@ -384,51 +376,86 @@ header {
           text-align: justify;
           word-wrap: break-word;
           hyphens: auto; }
-  .mainHome .contacto {
+  .mainHome .contactoBotonFormulario {
+    grid-area: contacto;
+    background-color: #67EBFA;
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background: #000; }
-    .mainHome .contacto .titulo1 {
-      font-family: 'Times New Roman', Times, serif;
-      color: rgba(255, 255, 255, 0.605);
-      font-size: 40px;
-      font-style: italic;
-      margin-bottom: -35px;
-      margin-left: -15px; }
-    .mainHome .contacto .titulo2 {
-      margin-top: 3vh;
-      font-size: 65px; }
-  .mainHome .contactoFlex {
-    background-color: #000; }
-    .mainHome .contactoFlex .sede, .mainHome .contactoFlex .email, .mainHome .contactoFlex .whatsapp {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center; }
-      .mainHome .contactoFlex .sede div, .mainHome .contactoFlex .email div, .mainHome .contactoFlex .whatsapp div {
+    align-items: center; }
+    .mainHome .contactoBotonFormulario button {
+      padding: 10px;
+      background-color: red;
+      border-radius: 5px; }
+
+/*.contacto{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2vh; }
-      .mainHome .contactoFlex .sede p, .mainHome .contactoFlex .sede h3, .mainHome .contactoFlex .sede i, .mainHome .contactoFlex .email p, .mainHome .contactoFlex .email h3, .mainHome .contactoFlex .email i, .mainHome .contactoFlex .whatsapp p, .mainHome .contactoFlex .whatsapp h3, .mainHome .contactoFlex .whatsapp i {
-        color: #fff;
-        line-height: 1.2; }
-        .mainHome .contactoFlex .sede p .a1, .mainHome .contactoFlex .sede h3 .a1, .mainHome .contactoFlex .sede i .a1, .mainHome .contactoFlex .email p .a1, .mainHome .contactoFlex .email h3 .a1, .mainHome .contactoFlex .email i .a1, .mainHome .contactoFlex .whatsapp p .a1, .mainHome .contactoFlex .whatsapp h3 .a1, .mainHome .contactoFlex .whatsapp i .a1 {
-          text-decoration: none;
-          color: #fff;
-          transition: 1s; }
-          .mainHome .contactoFlex .sede p .a1:hover, .mainHome .contactoFlex .sede h3 .a1:hover, .mainHome .contactoFlex .sede i .a1:hover, .mainHome .contactoFlex .email p .a1:hover, .mainHome .contactoFlex .email h3 .a1:hover, .mainHome .contactoFlex .email i .a1:hover, .mainHome .contactoFlex .whatsapp p .a1:hover, .mainHome .contactoFlex .whatsapp h3 .a1:hover, .mainHome .contactoFlex .whatsapp i .a1:hover {
-            color: #CE97FB; }
-        .mainHome .contactoFlex .sede p .a2, .mainHome .contactoFlex .sede h3 .a2, .mainHome .contactoFlex .sede i .a2, .mainHome .contactoFlex .email p .a2, .mainHome .contactoFlex .email h3 .a2, .mainHome .contactoFlex .email i .a2, .mainHome .contactoFlex .whatsapp p .a2, .mainHome .contactoFlex .whatsapp h3 .a2, .mainHome .contactoFlex .whatsapp i .a2 {
-          text-decoration: none;
-          color: #fff;
-          transition: 1s; }
-          .mainHome .contactoFlex .sede p .a2:hover, .mainHome .contactoFlex .sede h3 .a2:hover, .mainHome .contactoFlex .sede i .a2:hover, .mainHome .contactoFlex .email p .a2:hover, .mainHome .contactoFlex .email h3 .a2:hover, .mainHome .contactoFlex .email i .a2:hover, .mainHome .contactoFlex .whatsapp p .a2:hover, .mainHome .contactoFlex .whatsapp h3 .a2:hover, .mainHome .contactoFlex .whatsapp i .a2:hover {
-            color: #9BFBE1; }
+        background: #000;
 
+        .titulo1{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgba(255, 255, 255, 0.605);
+            font-size: 40px;
+            font-style: italic;
+            margin-bottom: -35px;
+            margin-left: -15px;
+        }
+
+        .titulo2{
+            margin-top: 3vh;
+            font-size: 65px;
+        }
+    }
+
+    .contactoFlex{
+        background-color: #000;
+
+        .sede, .email, .whatsapp{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2vh;
+            }
+
+            p, h3, i{
+                color: #fff;
+                line-height: 1.2;
+                
+                .a1{
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 1s;
+
+                    &:hover{
+                        color: #CE97FB;
+                    }
+                }
+
+                .a2{
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 1s;
+
+                    &:hover{
+                        color: #9BFBE1;
+                    }
+                }
+            }
+        }
+    }
+
+}*/
 /*FOOTER*/
 .footerDiv {
   height: auto;
@@ -773,69 +800,53 @@ header {
   header .bg-dark {
     height: auto; }
   header nav div a img {
-    width: 18vw;
+    width: 14vw;
     margin-left: 0px; }
-  .mainHome {
-    grid-template-rows: auto auto 100vh auto 0vh; }
-    .mainHome .presentacion {
-      flex-direction: column; }
-      .mainHome .presentacion .otraPresentacionH {
-        width: 100%;
-        padding: 60px 30px 0px 30px;
-        height: 90vh; }
-        .mainHome .presentacion .otraPresentacionH p {
-          font-size: 7vh;
-          margin-left: 0px;
-          margin-bottom: -3.5vh; }
-        .mainHome .presentacion .otraPresentacionH h1 {
-          font-size: 7vh; }
-        .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer {
-          width: 100%;
-          height: 80px; }
-          .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer #subtitle {
-            font-size: 13px;
-            padding-left: 10px;
-            word-wrap: break-word;
-            hyphens: auto; }
-          .mainHome .presentacion .otraPresentacionH .otraPresentacionHContainer #otraPresentacionHContainerGif {
-            width: 90px; }
-        .mainHome .presentacion .otraPresentacionH .presentacionFlecha {
-          visibility: visible !important;
-          width: 20%;
-          align-self: flex-end;
-          margin: 10% 40% 0px 40%;
-          opacity: 0.8;
-          animation-name: flecha;
-          animation-iteration-count: infinite;
-          animation-timing-function: ease-in-out;
-          animation-duration: 1s;
-          animation-delay: 2s; }
-  @keyframes flecha {
-    0% {
-      transform: translate(0px, 0px);
-      opacity: 0.6; }
-    100% {
-      transform: translate(0px, 20px);
-      opacity: 0.4; } }
-      .mainHome .presentacion .otraPresentacionDownald {
-        align-self: center;
-        padding-bottom: 0px; }
-        .mainHome .presentacion .otraPresentacionDownald .otraPresentacionDownaldGif {
-          width: 60vw;
-          height: 60vw; }
-    .mainHome .services {
-      grid-template-columns: 100%;
-      grid-template-rows: auto repeat(8, 70vh);
-      grid-template-areas: "encabezado" "uno" "dos" "tres"  "cuatro" "cinco" "seis" "siete" "ocho"; }
-      .mainHome .services h2 {
-        font-size: 55px;
-        margin: 20px 0px; }
-      .mainHome .services h3 {
-        font-size: 30px;
-        bottom: 12% !important; }
-      .mainHome .services p {
-        font-size: 16px; }
-      .mainHome .services .servicesContenidoGif {
-        height: 150px !important;
-        width: 150px !important;
-        top: 12% !important; } }
+  .mainHome .presentacionContenedor {
+    align-content: flex-start;
+    padding: 0px; }
+    .mainHome .presentacionContenedor .presentacionH {
+      width: 85%;
+      height: 50%; }
+      .mainHome .presentacionContenedor .presentacionH p {
+        font-size: 26px;
+        margin-left: -5px;
+        margin-bottom: -13px; }
+      .mainHome .presentacionContenedor .presentacionH h1 {
+        font-size: 35px; }
+      .mainHome .presentacionContenedor .presentacionH .presentacionP {
+        margin-top: 10px;
+        bottom: auto;
+        width: 100%; }
+        .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPGif {
+          width: 60px;
+          padding-left: 3px; }
+        .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPsubtitulo {
+          font-size: 13px;
+          line-height: 1.4;
+          padding: 0px 0px 15px 15px; }
+    .mainHome .presentacionContenedor .presentacionDescarga {
+      width: 85%;
+      padding: 0px;
+      margin-top: 10px; }
+      .mainHome .presentacionContenedor .presentacionDescarga .presentacionDescargaGif {
+        width: 65%;
+        height: auto;
+        margin: 0px 15%; }
+  .mainHome .services {
+    grid-template-columns: 100%;
+    grid-template-rows: auto repeat(8, 300px);
+    grid-template-areas: "encabezado" "uno" "dos" "tres"  "cuatro" "cinco" "seis" "siete" "ocho"; }
+    .mainHome .services h2 {
+      font-size: 55px;
+      margin: 20px 0px; }
+    .mainHome .services h3 {
+      font-size: 30px;
+      bottom: 12% !important; }
+    .mainHome .services p {
+      font-size: 16px;
+      padding: 5px 0px; }
+    .mainHome .services .servicesContenidoGif {
+      height: 150px !important;
+      width: 150px !important;
+      top: 12% !important; } }

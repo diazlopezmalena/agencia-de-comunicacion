@@ -15,31 +15,15 @@
 
     /** Presentación **/
 
-    .contactoBotonFormulario {
-        grid-area: contacto;
-        background-color: #67EBFA;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        button {
-            padding: 10px;
-            background-color: red;
-            border-radius: 5px;
-        }
-    }
-
-    .presentacion {
+    .presentacionContenedor {
         grid-area: presentacion;
         width: 100%;
         color: #fff;
         background: linear-gradient(45deg,#67EBFA,#9BFBE1,#FDDF7E,#FAA990, #F6A5EB, #CE97FB);
         background-size: 400% 400%;
-        position: relative;
         animation: cambiar 10s ease-out infinite;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         padding-bottom: 30px;
@@ -50,10 +34,12 @@
             100%{background-position: 0 50%;}
         }
 
-        .otraPresentacionH {
+        .presentacionH {
             width: 50%;
             align-self: flex-start;
             padding-top: 5vw;
+            position: relative;
+            height: 100%;
             
             p {
             font-family: $font-secundaria;
@@ -72,7 +58,7 @@
                 line-height: 0.9;
             }
 
-            .otraPresentacionHContainer {
+            .presentacionP {
                 display: flex;
                 height: auto;
                 width: 70%;
@@ -81,22 +67,24 @@
                 background-color: rgba(255, 255, 255, 0.441);
                 border-radius: 15px;
                 margin-top: 9vw;
+                position: absolute;
+                bottom: 60px;
 
-                #subtitle {
-                    font-family: $font-principal;
-                    font-style: normal;
-                    font-size: 1.2vw;
-                    color: rgb(0, 0, 0);
-                    padding-left: 30px;
-                }
-
-                #otraPresentacionHContainerGif {
+                #presentacionPGif {
                     width: 3.5vw;
                     height: 3.5vw;
     
                     img {
                         border-radius: 100px;
                     }
+                }
+
+                #presentacionPsubtitulo {
+                    font-family: $font-principal;
+                    font-style: normal;
+                    font-size: 1.2vw;
+                    color: rgb(0, 0, 0);
+                    padding-left: 30px;
                 }
             }
             
@@ -105,12 +93,12 @@
             }
         }
 
-        .otraPresentacionDownald {
+        .presentacionDescarga {
             text-align: center;
             align-self: flex-end;
             padding-bottom: 60px;
-        
-            .otraPresentacionDownaldGif {
+            
+            .presentacionDescargaGif {
                 width: 23vw;
                 height: 23vw;
                 box-shadow: rgba(0, 0, 0, 0.612) 10px 10px 10px;
@@ -497,7 +485,26 @@
     /** Clientes: en partial _carousel **/
 
     /** Contacto **/
-    .contacto{
+
+    .contactoBotonFormulario {
+        grid-area: contacto;
+        background-color: #67EBFA;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            padding: 10px;
+            background-color: red;
+            border-radius: 5px;
+        }
+    }
+
+}
+
+    /*.contacto{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -563,7 +570,7 @@
         }
     }
 
-}
+}*/
 
 /*FOOTER*/
 .footerDiv {
@@ -586,5 +593,4 @@
             margin-bottom: 5vw;
         }
     }
-
 }
