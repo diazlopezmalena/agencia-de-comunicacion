@@ -325,6 +325,8 @@ header {
       animation: movimientoinverso 2s; }
     .mainHome .services .servicesProdu:hover {
       border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1; }
+  .mainHome .serviciosMobile {
+    display: none; }
   .mainHome .adn {
     grid-area: adn;
     color: #fff;
@@ -802,51 +804,108 @@ header {
   header nav div a img {
     width: 14vw;
     margin-left: 0px; }
-  .mainHome .presentacionContenedor {
-    align-content: flex-start;
-    padding: 0px; }
-    .mainHome .presentacionContenedor .presentacionH {
-      width: 85%;
-      height: 50%; }
-      .mainHome .presentacionContenedor .presentacionH p {
-        font-size: 26px;
-        margin-left: -5px;
-        margin-bottom: -13px; }
-      .mainHome .presentacionContenedor .presentacionH h1 {
-        font-size: 35px; }
-      .mainHome .presentacionContenedor .presentacionH .presentacionP {
-        margin-top: 10px;
-        bottom: auto;
-        width: 100%; }
-        .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPGif {
-          width: 60px;
-          padding-left: 3px; }
-        .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPsubtitulo {
-          font-size: 13px;
-          line-height: 1.4;
-          padding: 0px 0px 15px 15px; }
-    .mainHome .presentacionContenedor .presentacionDescarga {
-      width: 85%;
-      padding: 0px;
-      margin-top: 10px; }
-      .mainHome .presentacionContenedor .presentacionDescarga .presentacionDescargaGif {
-        width: 65%;
-        height: auto;
-        margin: 0px 15%; }
-  .mainHome .services {
-    grid-template-columns: 100%;
-    grid-template-rows: auto repeat(8, 300px);
-    grid-template-areas: "encabezado" "uno" "dos" "tres"  "cuatro" "cinco" "seis" "siete" "ocho"; }
-    .mainHome .services h2 {
-      font-size: 55px;
-      margin: 20px 0px; }
-    .mainHome .services h3 {
-      font-size: 30px;
-      bottom: 12% !important; }
-    .mainHome .services p {
-      font-size: 16px;
-      padding: 5px 0px; }
-    .mainHome .services .servicesContenidoGif {
-      height: 150px !important;
-      width: 150px !important;
-      top: 12% !important; } }
+  .mainHome {
+    grid-template-rows: 85vh auto 100vh auto 20vh; }
+    .mainHome .presentacionContenedor {
+      align-content: flex-start;
+      padding: 0px; }
+      .mainHome .presentacionContenedor .presentacionH {
+        width: 85%;
+        height: 50%;
+        padding-top: 30px; }
+        .mainHome .presentacionContenedor .presentacionH p {
+          font-size: 30px;
+          margin-left: -5px;
+          margin-bottom: -13px; }
+        .mainHome .presentacionContenedor .presentacionH h1 {
+          font-size: 40px; }
+        .mainHome .presentacionContenedor .presentacionH .presentacionP {
+          margin-top: 10px;
+          bottom: auto;
+          width: auto; }
+          .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPGif {
+            width: 60px;
+            padding-left: 3px; }
+          .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPsubtitulo {
+            font-size: 13px;
+            line-height: 1.4;
+            padding: 0px 0px 15px 15px; }
+      .mainHome .presentacionContenedor .presentacionDescarga {
+        width: 85%;
+        padding: 0px;
+        margin-top: 10px; }
+        .mainHome .presentacionContenedor .presentacionDescarga .presentacionDescargaGif {
+          width: 85%;
+          height: auto;
+          margin: 0px 7%; }
+    .mainHome .services {
+      display: none;
+      /*    grid-template-columns: 100%;
+            grid-template-rows: auto repeat(8, 300px);
+            grid-template-areas: "encabezado"
+                                 "uno"
+                                 "dos"
+                                 "tres" 
+                                 "cuatro"
+                                 "cinco"
+                                 "seis"
+                                 "siete"
+                                 "ocho";
+
+            h2 {
+                font-size: 55px;
+                margin: 20px 0px;
+            }
+
+            h3 {
+                font-size: 30px;
+                bottom: 12% !important;
+            }
+
+            p {
+                font-size: 16px;
+                padding: 5px 0px;
+            }
+
+            .servicesContenidoGif {
+                height: 150px !important;
+                width: 150px !important;
+                top: 12% !important;
+            }
+            */ }
+    .mainHome .serviciosMobile {
+      display: block;
+      grid-area: servicios;
+      padding: 10px; }
+      .mainHome .serviciosMobile .hSeccion {
+        font-size: 40px;
+        margin: 30px 0px; }
+      .mainHome .serviciosMobile .accordion-item {
+        border-color: #2a2a2a;
+        box-shadow: #363636 0px 0px 10px;
+        background-color: black; }
+        .mainHome .serviciosMobile .accordion-item .accordion-button {
+          background-image: linear-gradient(45deg, #ce97fb, #f6a5eb9d, #9bfbe192, #67ebfa);
+          color: black;
+          font-weight: 700;
+          border-radius: 5px 5px 0px 0px; }
+          .mainHome .serviciosMobile .accordion-item .accordion-button .serviciosMobileGif {
+            width: 50px;
+            margin-right: 10px; }
+            .mainHome .serviciosMobile .accordion-item .accordion-button .serviciosMobileGif img {
+              border-radius: 100px;
+              border: solid 1px black; }
+        .mainHome .serviciosMobile .accordion-item .collapsed {
+          background-image: none;
+          background-color: black;
+          color: white; }
+        .mainHome .serviciosMobile .accordion-item .accordion-button:not(.collapsed)::after {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+        .mainHome .serviciosMobile .accordion-item .accordion-button:focus {
+          box-shadow: none; }
+      .mainHome .serviciosMobile .accordion-body {
+        border: solid 4px;
+        border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1;
+        border-top: none;
+        background-color: #f2f2f2;
+        color: #0a0a0a; } }
