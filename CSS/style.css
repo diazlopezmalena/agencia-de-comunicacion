@@ -805,7 +805,7 @@ header {
     width: 14vw;
     margin-left: 0px; }
   .mainHome {
-    grid-template-rows: 85vh auto 100vh auto 20vh; }
+    grid-template-rows: 85vh auto auto auto 20vh; }
     .mainHome .presentacionContenedor {
       align-content: flex-start;
       padding: 0px; }
@@ -876,7 +876,8 @@ header {
     .mainHome .serviciosMobile {
       display: block;
       grid-area: servicios;
-      padding: 10px; }
+      padding: 10px;
+      margin-bottom: 40px; }
       .mainHome .serviciosMobile .hSeccion {
         font-size: 40px;
         margin: 30px 0px; }
@@ -899,6 +900,9 @@ header {
           background-image: none;
           background-color: black;
           color: white; }
+        .mainHome .serviciosMobile .accordion-item .accordion-button::after {
+          background-image: url("../../images/flecha.png");
+          background-size: 0.8rem; }
         .mainHome .serviciosMobile .accordion-item .accordion-button:not(.collapsed)::after {
           background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
         .mainHome .serviciosMobile .accordion-item .accordion-button:focus {
@@ -907,5 +911,27 @@ header {
         border: solid 4px;
         border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1;
         border-top: none;
-        background-color: #f2f2f2;
-        color: #0a0a0a; } }
+        background-color: black;
+        color: white; }
+    .mainHome .adn {
+      padding-top: 20px; }
+      .mainHome .adn .tituloAdn {
+        font-size: 40px;
+        margin-bottom: -30px; }
+      .mainHome .adn .tituloAdn2 {
+        font-size: 50px;
+        margin-bottom: 20px; }
+      .mainHome .adn div {
+        flex-direction: column; }
+        .mainHome .adn div .card {
+          width: 90%;
+          margin: 20px;
+          height: auto;
+          padding: 20px 30px; }
+          .mainHome .adn div .card img {
+            width: 100px;
+            margin-bottom: 20px; }
+          .mainHome .adn div .card h4 {
+            font-size: 25px; }
+          .mainHome .adn div .card p {
+            font-size: 16px; } }
