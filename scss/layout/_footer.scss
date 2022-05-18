@@ -1,166 +1,113 @@
-.footerDiv{
-    background-color: rgb(14, 14, 14);
-    width: 100%;
+.divFooter {
     display: flex;
+    justify-content: space-evenly;
     align-items: start;
-    padding: 5vh 0 2vh 0;
-    
-    .divFooter1{
-        display: flex;
-        flex-direction: column;
-    
-        a{
-            display: flex;
-            flex-direction: row;
-            align-items: end;
-            text-decoration: none;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    padding: 5vh 0 5vh 0;
+    font-family: $font-principal;
 
-            p{
-                color: rgb(219, 218, 218);
-                font-size: 20px;
-                font-weight: 600;
-                transition: 1s;
+    .divFooter1 {
+        a {
+            font-size: 20px;
+            font-weight: 600;
+            transition: 1s;
+            color: white;
 
-                &:hover{
-                    color: #CE97FB;
-                }
+            img {
+                margin-right: 5px;            
+                width: 3vw;
+            }
+
+            &:hover{
+                color: #CE97FB;
             }
         }
 
-        p{
-            color: rgb(219, 218, 218);
-            font-size: 14px;
-            line-height: 1.5;
+        p {
+            font-size: 25px;
+            font-family: $font-secundaria;
+            font-style: italic;
+            opacity: 0.3;
+            text-align: end;
+            margin-top: -10px;
         }
     }
-    
-    .divFooter2{
-        display: flex;
-        flex-direction: column;
 
-            p{
-                color: rgb(219, 218, 218);
-                font-size: 16px;
-                font-weight: 600;
-            }
-
-            .l1{
-                transition: 1s;
-                text-decoration: none;
-                color: rgb(219, 218, 218);
-                font-size: 12px;
-    
-                &:hover{
-                    color: #FDDF7E;
-                }
-            }
-
-            .l2{
-                transition: 1s;
-                text-decoration: none;
-                color: rgb(219, 218, 218);
-                font-size: 12px;
-    
-                &:hover{
-                    color: #FAA990;
-                }
-            }
-
-            .l3{
-                transition: 1s;
-                text-decoration: none;
-                color: rgb(219, 218, 218);
-                font-size: 12px;
-    
-                &:hover{
-                    color: #9BFBE1;
-                }
-            }
-
-            .l4{
-                transition: 1s;
-                text-decoration: none;
-                color: rgb(219, 218, 218);
-                font-size: 12px;
-    
-                &:hover{
-                    color: #CE97FB;
-                }
-            }
-
-            i{
-                transition: 1s;
-                color: rgb(219, 218, 218);
-                font-size: 12px;
-    
-                &:hover{
-                    color: #fff;
-                }
-            }
-        }
-    
-    .divFooter3{
-        display: flex;
-        flex-direction: column;
-
-        p{
-            color: rgb(219, 218, 218);
+    .divFooter2 {
+        h3 {
+            color: $color-secundario;
             font-size: 16px;
             font-weight: 600;
         }
 
-        .divFooter3div1{
-            display: flex;
-            flex-direction: column;
+        ul li a {
+            color: $color-secundario;
+            font-size: 12px;
+        }
+
+        .l1:hover{
+            transition: 1s;
+            color: #FDDF7E;
+        }
+
+        .l2:hover{
+            transition: 1s;
+            color: #FAA990;
+        }
         
-    
-            .redesSocialesLogo{
-                color: rgb(219, 218, 218);
-                height: 2vh;
-            }
+        .l3:hover{
+            transition: 1s;
+            color: #9BFBE1;
+        }
+        
+        .l4:hover{
+            transition: 1s;
+            color: #CE97FB;
+        }
 
-            .e1{
-                transition: 1s;
-                text-decoration: none;
-                color: rgb(219, 218, 218);
-                font-size: 12px;
+        i {
+            padding-right: 10px;
+        }
+    }
     
-                &:hover{
-                    color: #CE97FB;
+    .divFooter3 {
+        h3 {
+            color: rgb(219, 218, 218);
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        ul li {
+            a {
+                color: $color-secundario;
+                font-size: 12px;
+
+                .redesSocialesLogo{
+                    height: 2vh;
+                    padding-right: 10px;
                 }
             }
-
-            .e2{
+        
+            .e1:hover{
                 transition: 1s;
-                text-decoration: none;
-                color: rgb(219, 218, 218);
-                font-size: 12px;
-    
-                &:hover{
-                    color: #F6A5EB;
-                }
+                color: #CE97FB;
             }
 
-            .e3{
+            .e2:hover{
                 transition: 1s;
-                text-decoration: none;
-                color: rgb(219, 218, 218);
-                font-size: 12px;
-    
-                &:hover{
-                    color: #FDDF7E;
-                }
+                color: #F6A5EB;
             }
 
-            .e4{
+            .e3:hover{
                 transition: 1s;
-                text-decoration: none;
-                color: rgb(219, 218, 218);
-                font-size: 12px;
-    
-                &:hover{
-                    color: #FAA990;
-                }
+                color: #FDDF7E;
+            }
+
+            .e4:hover{
+                transition: 1s;
+                color: #FAA990;
             }
         }
     }
@@ -173,32 +120,29 @@
     align-items: center;
     background-color: rgb(14, 14, 14);
 
-    .divLineal{
+    .divLineal {
         @include divLineal(70%, 0, 0.1vh, 0, 0.5vh 0 0 0)
     }
 
-    .copyright{
+    .copyright {
         font-size: 12px;
     }
     
-    p{
+    p {
         margin: 1vh 0;
-        color: rgb(219, 218, 218);
+        color: $color-secundario;
         font-size: 14px;
 
-        .a1{
-            color: rgb(219, 218, 218);
-            text-decoration: none;
-            transition: 1s;
-
+        .a1 {
+            color: $color-secundario;
+            
             &:hover{
-                color: #9BFBE1;
+                color: #CE97FB;
             }
         }
 
-        .a2{
-            color: rgb(219, 218, 218);
-            text-decoration: none;
+        .a2 {
+            color: $color-secundario;
             transition: 1s;
 
             &:hover{

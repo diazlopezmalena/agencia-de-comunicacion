@@ -1,30 +1,30 @@
 @charset "UTF-8";
-.mainHome .services .servicesContenido h3, .mainHome .services .servicesPlaneacion h3, .mainHome .services .servicesWeb h3, .mainHome .services .servicesPubli h3, .mainHome .services .servicesPr h3, .mainHome .services .servicesEventos h3, .mainHome .services .servicesDigital h3, .mainHome .services .servicesProdu h3 {
+.mainHome #servicios .services .servicesContenido h3, .mainHome #servicios .services .servicesPlaneacion h3, .mainHome #servicios .services .servicesWeb h3, .mainHome #servicios .services .servicesPubli h3, .mainHome #servicios .services .servicesPr h3, .mainHome #servicios .services .servicesEventos h3, .mainHome #servicios .services .servicesDigital h3, .mainHome #servicios .services .servicesProdu h3 {
   position: absolute;
   bottom: 2vw;
   opacity: 1;
   text-align: center;
   padding: 20px; }
 
-.mainHome .services .servicesContenido .servicesContenidoGif, .mainHome .services .servicesPlaneacion .servicesContenidoGif, .mainHome .services .servicesWeb .servicesContenidoGif, .mainHome .services .servicesPubli .servicesContenidoGif, .mainHome .services .servicesPr .servicesContenidoGif, .mainHome .services .servicesEventos .servicesContenidoGif, .mainHome .services .servicesDigital .servicesContenidoGif, .mainHome .services .servicesProdu .servicesContenidoGif {
+.mainHome #servicios .services .servicesContenido .servicesContenidoGif, .mainHome #servicios .services .servicesPlaneacion .servicesContenidoGif, .mainHome #servicios .services .servicesWeb .servicesContenidoGif, .mainHome #servicios .services .servicesPubli .servicesContenidoGif, .mainHome #servicios .services .servicesPr .servicesContenidoGif, .mainHome #servicios .services .servicesEventos .servicesContenidoGif, .mainHome #servicios .services .servicesDigital .servicesContenidoGif, .mainHome #servicios .services .servicesProdu .servicesContenidoGif {
   height: 7vw;
   width: 7vw;
   position: absolute;
   top: 3vw;
   opacity: 1; }
-  .mainHome .services .servicesContenido .servicesContenidoGif img, .mainHome .services .servicesPlaneacion .servicesContenidoGif img, .mainHome .services .servicesWeb .servicesContenidoGif img, .mainHome .services .servicesPubli .servicesContenidoGif img, .mainHome .services .servicesPr .servicesContenidoGif img, .mainHome .services .servicesEventos .servicesContenidoGif img, .mainHome .services .servicesDigital .servicesContenidoGif img, .mainHome .services .servicesProdu .servicesContenidoGif img {
+  .mainHome #servicios .services .servicesContenido .servicesContenidoGif img, .mainHome #servicios .services .servicesPlaneacion .servicesContenidoGif img, .mainHome #servicios .services .servicesWeb .servicesContenidoGif img, .mainHome #servicios .services .servicesPubli .servicesContenidoGif img, .mainHome #servicios .services .servicesPr .servicesContenidoGif img, .mainHome #servicios .services .servicesEventos .servicesContenidoGif img, .mainHome #servicios .services .servicesDigital .servicesContenidoGif img, .mainHome #servicios .services .servicesProdu .servicesContenidoGif img {
     border-radius: 100px; }
 
-.mainHome .services .servicesContenido p, .mainHome .services .servicesPlaneacion p, .mainHome .services .servicesWeb p, .mainHome .services .servicesPubli p, .mainHome .services .servicesPr p, .mainHome .services .servicesEventos p, .mainHome .services .servicesDigital p, .mainHome .services .servicesProdu p {
+.mainHome #servicios .services .servicesContenido p, .mainHome #servicios .services .servicesPlaneacion p, .mainHome #servicios .services .servicesWeb p, .mainHome #servicios .services .servicesPubli p, .mainHome #servicios .services .servicesPr p, .mainHome #servicios .services .servicesEventos p, .mainHome #servicios .services .servicesDigital p, .mainHome #servicios .services .servicesProdu p {
   position: relative;
   opacity: 0;
   padding: 15px; }
 
-.mainHome .services .servicesContenido:hover, .mainHome .services .servicesPlaneacion:hover, .mainHome .services .servicesWeb:hover, .mainHome .services .servicesPubli:hover, .mainHome .services .servicesPr:hover, .mainHome .services .servicesEventos:hover, .mainHome .services .servicesDigital:hover, .mainHome .services .servicesProdu:hover {
+.mainHome #servicios .services .servicesContenido:hover, .mainHome #servicios .services .servicesPlaneacion:hover, .mainHome #servicios .services .servicesWeb:hover, .mainHome #servicios .services .servicesPubli:hover, .mainHome #servicios .services .servicesPr:hover, .mainHome #servicios .services .servicesEventos:hover, .mainHome #servicios .services .servicesDigital:hover, .mainHome #servicios .services .servicesProdu:hover {
   animation: movimiento 2s; }
-  .mainHome .services .servicesContenido:hover .servicesContenidoGif, .mainHome .services .servicesPlaneacion:hover .servicesContenidoGif, .mainHome .services .servicesWeb:hover .servicesContenidoGif, .mainHome .services .servicesPubli:hover .servicesContenidoGif, .mainHome .services .servicesPr:hover .servicesContenidoGif, .mainHome .services .servicesEventos:hover .servicesContenidoGif, .mainHome .services .servicesDigital:hover .servicesContenidoGif, .mainHome .services .servicesProdu:hover .servicesContenidoGif, .mainHome .services .servicesContenido:hover h3, .mainHome .services .servicesPlaneacion:hover h3, .mainHome .services .servicesWeb:hover h3, .mainHome .services .servicesPubli:hover h3, .mainHome .services .servicesPr:hover h3, .mainHome .services .servicesEventos:hover h3, .mainHome .services .servicesDigital:hover h3, .mainHome .services .servicesProdu:hover h3 {
+  .mainHome #servicios .services .servicesContenido:hover .servicesContenidoGif, .mainHome #servicios .services .servicesPlaneacion:hover .servicesContenidoGif, .mainHome #servicios .services .servicesWeb:hover .servicesContenidoGif, .mainHome #servicios .services .servicesPubli:hover .servicesContenidoGif, .mainHome #servicios .services .servicesPr:hover .servicesContenidoGif, .mainHome #servicios .services .servicesEventos:hover .servicesContenidoGif, .mainHome #servicios .services .servicesDigital:hover .servicesContenidoGif, .mainHome #servicios .services .servicesProdu:hover .servicesContenidoGif, .mainHome #servicios .services .servicesContenido:hover h3, .mainHome #servicios .services .servicesPlaneacion:hover h3, .mainHome #servicios .services .servicesWeb:hover h3, .mainHome #servicios .services .servicesPubli:hover h3, .mainHome #servicios .services .servicesPr:hover h3, .mainHome #servicios .services .servicesEventos:hover h3, .mainHome #servicios .services .servicesDigital:hover h3, .mainHome #servicios .services .servicesProdu:hover h3 {
     opacity: 0; }
-  .mainHome .services .servicesContenido:hover p, .mainHome .services .servicesPlaneacion:hover p, .mainHome .services .servicesWeb:hover p, .mainHome .services .servicesPubli:hover p, .mainHome .services .servicesPr:hover p, .mainHome .services .servicesEventos:hover p, .mainHome .services .servicesDigital:hover p, .mainHome .services .servicesProdu:hover p {
+  .mainHome #servicios .services .servicesContenido:hover p, .mainHome #servicios .services .servicesPlaneacion:hover p, .mainHome #servicios .services .servicesWeb:hover p, .mainHome #servicios .services .servicesPubli:hover p, .mainHome #servicios .services .servicesPr:hover p, .mainHome #servicios .services .servicesEventos:hover p, .mainHome #servicios .services .servicesDigital:hover p, .mainHome #servicios .services .servicesProdu:hover p {
     opacity: 1; }
 
 /* LINEAS HORIZONTALES */
@@ -183,25 +183,26 @@ header {
         .mainHome .presentacionContenedor .presentacionDescarga .presentacionDescargaGif img {
           min-width: 100%;
           border-radius: 5px; }
-  .mainHome .services {
-    grid-area: servicios;
-    padding: 30px 10px;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-template-rows: auto 20vw 20vw;
-    grid-template-areas: "encabezado encabezado encabezado encabezado" "uno dos tres cuatro" "cinco seis siete ocho";
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 3vw;
-    /*** Sevicios: animaciones ***/
-    /*** Sevicios: cards y hover ***/ }
-    .mainHome .services h2 {
-      grid-area: encabezado;
-      margin: 40px; }
-    .mainHome .services p, .mainHome .services h3 {
-      transition: all 100ms; }
+  .mainHome #servicios {
+    grid-area: servicios; }
+    .mainHome #servicios .services {
+      padding: 30px 10px;
+      background-color: black;
+      display: grid;
+      grid-template-columns: 23% 23% 23% 23%;
+      grid-template-rows: auto 20vw 20vw;
+      grid-template-areas: "encabezado encabezado encabezado encabezado" "uno dos tres cuatro" "cinco seis siete ocho";
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 3vw;
+      /*** Sevicios: animaciones ***/
+      /*** Sevicios: cards y hover ***/ }
+      .mainHome #servicios .services h2 {
+        grid-area: encabezado;
+        margin: 40px; }
+      .mainHome #servicios .services p, .mainHome #servicios .services h3 {
+        transition: all 100ms; }
 
 @keyframes movimiento {
   from {
@@ -218,115 +219,115 @@ header {
     opacity: 0.5 !important; }
   to {
     opacity: 1; } }
-    .mainHome .services .servicesContenido {
-      grid-area: uno;
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      border: solid 6px transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      animation: movimientoinverso 2s; }
-    .mainHome .services .servicesContenido:hover {
-      border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1; }
-    .mainHome .services .servicesPlaneacion {
-      grid-area: dos;
-      width: 100%;
-      height: 100%;
-      border: solid 6px transparent;
-      padding-top: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      animation: movimientoinverso 2s; }
-    .mainHome .services .servicesPlaneacion:hover {
-      border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1; }
-    .mainHome .services .servicesWeb {
-      grid-area: tres;
-      width: 100%;
-      height: 100%;
-      border: solid 6px transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      animation: movimientoinverso 2s; }
-    .mainHome .services .servicesWeb:hover {
-      border-image: linear-gradient(to bottom, #9BFBE1, #F6A5EB 100%) 1; }
-    .mainHome .services .servicesPubli {
-      grid-area: cuatro;
-      width: 100%;
-      height: 100%;
-      border: solid 6px transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      animation: movimientoinverso 2s; }
-    .mainHome .services .servicesPubli:hover {
-      border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1; }
-    .mainHome .services .servicesPr {
-      grid-area: cinco;
-      width: 100%;
-      height: 100%;
-      border: solid 6px transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      animation: movimientoinverso 2s;
-      padding-top: 5px; }
-    .mainHome .services .servicesPr:hover {
-      border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1; }
-    .mainHome .services .servicesEventos {
-      grid-area: seis;
-      width: 100%;
-      height: 100%;
-      border: solid 6px transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      animation: movimientoinverso 2s; }
-    .mainHome .services .servicesEventos:hover {
-      border-image: linear-gradient(to bottom, #9BFBE1, #F6A5EB 100%) 1; }
-    .mainHome .services .servicesDigital {
-      grid-area: siete;
-      width: 100%;
-      height: 100%;
-      border: solid 6px transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      animation: movimientoinverso 2s; }
-    .mainHome .services .servicesDigital:hover {
-      border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1; }
-    .mainHome .services .servicesProdu {
-      grid-area: ocho;
-      width: 100%;
-      height: 100%;
-      border: solid 6px transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      animation: movimientoinverso 2s; }
-    .mainHome .services .servicesProdu:hover {
-      border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1; }
-  .mainHome .serviciosMobile {
-    display: none; }
+      .mainHome #servicios .services .servicesContenido {
+        grid-area: uno;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        border: solid 6px transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        animation: movimientoinverso 2s; }
+      .mainHome #servicios .services .servicesContenido:hover {
+        border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1; }
+      .mainHome #servicios .services .servicesPlaneacion {
+        grid-area: dos;
+        width: 100%;
+        height: 100%;
+        border: solid 6px transparent;
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        animation: movimientoinverso 2s; }
+      .mainHome #servicios .services .servicesPlaneacion:hover {
+        border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1; }
+      .mainHome #servicios .services .servicesWeb {
+        grid-area: tres;
+        width: 100%;
+        height: 100%;
+        border: solid 6px transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        animation: movimientoinverso 2s; }
+      .mainHome #servicios .services .servicesWeb:hover {
+        border-image: linear-gradient(to bottom, #9BFBE1, #F6A5EB 100%) 1; }
+      .mainHome #servicios .services .servicesPubli {
+        grid-area: cuatro;
+        width: 100%;
+        height: 100%;
+        border: solid 6px transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        animation: movimientoinverso 2s; }
+      .mainHome #servicios .services .servicesPubli:hover {
+        border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1; }
+      .mainHome #servicios .services .servicesPr {
+        grid-area: cinco;
+        width: 100%;
+        height: 100%;
+        border: solid 6px transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        animation: movimientoinverso 2s;
+        padding-top: 5px; }
+      .mainHome #servicios .services .servicesPr:hover {
+        border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1; }
+      .mainHome #servicios .services .servicesEventos {
+        grid-area: seis;
+        width: 100%;
+        height: 100%;
+        border: solid 6px transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        animation: movimientoinverso 2s; }
+      .mainHome #servicios .services .servicesEventos:hover {
+        border-image: linear-gradient(to bottom, #9BFBE1, #F6A5EB 100%) 1; }
+      .mainHome #servicios .services .servicesDigital {
+        grid-area: siete;
+        width: 100%;
+        height: 100%;
+        border: solid 6px transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        animation: movimientoinverso 2s; }
+      .mainHome #servicios .services .servicesDigital:hover {
+        border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1; }
+      .mainHome #servicios .services .servicesProdu {
+        grid-area: ocho;
+        width: 100%;
+        height: 100%;
+        border: solid 6px transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        animation: movimientoinverso 2s; }
+      .mainHome #servicios .services .servicesProdu:hover {
+        border-image: linear-gradient(to bottom, #FDDF7E, #FAA990 100%) 1; }
+    .mainHome #servicios .serviciosMobile {
+      display: none; }
   .mainHome .adn {
     grid-area: adn;
     color: #fff;
@@ -347,6 +348,7 @@ header {
       font-family: "Plus Jakarta Sans", sans-serif; }
     .mainHome .adn div {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       margin-top: 3vw;
       font-family: "Plus Jakarta Sans", sans-serif;
@@ -458,22 +460,6 @@ header {
     }
 
 }*/
-/*FOOTER*/
-.footerDiv {
-  height: auto;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-family: "Plus Jakarta Sans", sans-serif; }
-  .footerDiv .divFooter1 {
-    flex-direction: column;
-    justify-items: start; }
-    .footerDiv .divFooter1 .logo {
-      width: 3vw; }
-    .footerDiv .divFooter1 .divFooter1div1 {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 5vw; }
-
 /*** Clientes - Carousel ***/
 .clients {
   grid-area: clientes;
@@ -579,113 +565,75 @@ header {
 .slick-arrow.slick-hidden {
   display: none; }
 
-.footerDiv {
-  background-color: #0e0e0e;
-  width: 100%;
+.divFooter {
   display: flex;
+  justify-content: space-evenly;
   align-items: start;
-  padding: 5vh 0 2vh 0; }
-  .footerDiv .divFooter1 {
-    display: flex;
-    flex-direction: column; }
-    .footerDiv .divFooter1 a {
-      display: flex;
-      flex-direction: row;
-      align-items: end;
-      text-decoration: none; }
-      .footerDiv .divFooter1 a p {
-        color: #dbdada;
-        font-size: 20px;
-        font-weight: 600;
-        transition: 1s; }
-        .footerDiv .divFooter1 a p:hover {
-          color: #CE97FB; }
-    .footerDiv .divFooter1 p {
-      color: #dbdada;
-      font-size: 14px;
-      line-height: 1.5; }
-  .footerDiv .divFooter2 {
-    display: flex;
-    flex-direction: column; }
-    .footerDiv .divFooter2 p {
-      color: #dbdada;
-      font-size: 16px;
-      font-weight: 600; }
-    .footerDiv .divFooter2 .l1 {
-      transition: 1s;
-      text-decoration: none;
-      color: #dbdada;
-      font-size: 12px; }
-      .footerDiv .divFooter2 .l1:hover {
-        color: #FDDF7E; }
-    .footerDiv .divFooter2 .l2 {
-      transition: 1s;
-      text-decoration: none;
-      color: #dbdada;
-      font-size: 12px; }
-      .footerDiv .divFooter2 .l2:hover {
-        color: #FAA990; }
-    .footerDiv .divFooter2 .l3 {
-      transition: 1s;
-      text-decoration: none;
-      color: #dbdada;
-      font-size: 12px; }
-      .footerDiv .divFooter2 .l3:hover {
-        color: #9BFBE1; }
-    .footerDiv .divFooter2 .l4 {
-      transition: 1s;
-      text-decoration: none;
-      color: #dbdada;
-      font-size: 12px; }
-      .footerDiv .divFooter2 .l4:hover {
-        color: #CE97FB; }
-    .footerDiv .divFooter2 i {
-      transition: 1s;
-      color: #dbdada;
-      font-size: 12px; }
-      .footerDiv .divFooter2 i:hover {
-        color: #fff; }
-  .footerDiv .divFooter3 {
-    display: flex;
-    flex-direction: column; }
-    .footerDiv .divFooter3 p {
-      color: #dbdada;
-      font-size: 16px;
-      font-weight: 600; }
-    .footerDiv .divFooter3 .divFooter3div1 {
-      display: flex;
-      flex-direction: column; }
-      .footerDiv .divFooter3 .divFooter3div1 .redesSocialesLogo {
-        color: #dbdada;
-        height: 2vh; }
-      .footerDiv .divFooter3 .divFooter3div1 .e1 {
-        transition: 1s;
-        text-decoration: none;
-        color: #dbdada;
-        font-size: 12px; }
-        .footerDiv .divFooter3 .divFooter3div1 .e1:hover {
-          color: #CE97FB; }
-      .footerDiv .divFooter3 .divFooter3div1 .e2 {
-        transition: 1s;
-        text-decoration: none;
-        color: #dbdada;
-        font-size: 12px; }
-        .footerDiv .divFooter3 .divFooter3div1 .e2:hover {
-          color: #F6A5EB; }
-      .footerDiv .divFooter3 .divFooter3div1 .e3 {
-        transition: 1s;
-        text-decoration: none;
-        color: #dbdada;
-        font-size: 12px; }
-        .footerDiv .divFooter3 .divFooter3div1 .e3:hover {
-          color: #FDDF7E; }
-      .footerDiv .divFooter3 .divFooter3div1 .e4 {
-        transition: 1s;
-        text-decoration: none;
-        color: #dbdada;
-        font-size: 12px; }
-        .footerDiv .divFooter3 .divFooter3div1 .e4:hover {
-          color: #FAA990; }
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  padding: 5vh 0 5vh 0;
+  font-family: "Plus Jakarta Sans", sans-serif; }
+  .divFooter .divFooter1 a {
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s;
+    color: white; }
+    .divFooter .divFooter1 a img {
+      margin-right: 5px;
+      width: 3vw; }
+    .divFooter .divFooter1 a:hover {
+      color: #CE97FB; }
+  .divFooter .divFooter1 p {
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    opacity: 0.3;
+    text-align: end;
+    margin-top: -10px; }
+  .divFooter .divFooter2 h3 {
+    color: #dbdada;
+    font-size: 16px;
+    font-weight: 600; }
+  .divFooter .divFooter2 ul li a {
+    color: #dbdada;
+    font-size: 12px; }
+  .divFooter .divFooter2 .l1:hover {
+    transition: 1s;
+    color: #FDDF7E; }
+  .divFooter .divFooter2 .l2:hover {
+    transition: 1s;
+    color: #FAA990; }
+  .divFooter .divFooter2 .l3:hover {
+    transition: 1s;
+    color: #9BFBE1; }
+  .divFooter .divFooter2 .l4:hover {
+    transition: 1s;
+    color: #CE97FB; }
+  .divFooter .divFooter2 i {
+    padding-right: 10px; }
+  .divFooter .divFooter3 h3 {
+    color: #dbdada;
+    font-size: 16px;
+    font-weight: 600; }
+  .divFooter .divFooter3 ul li a {
+    color: #dbdada;
+    font-size: 12px; }
+    .divFooter .divFooter3 ul li a .redesSocialesLogo {
+      height: 2vh;
+      padding-right: 10px; }
+  .divFooter .divFooter3 ul li .e1:hover {
+    transition: 1s;
+    color: #CE97FB; }
+  .divFooter .divFooter3 ul li .e2:hover {
+    transition: 1s;
+    color: #F6A5EB; }
+  .divFooter .divFooter3 ul li .e3:hover {
+    transition: 1s;
+    color: #FDDF7E; }
+  .divFooter .divFooter3 ul li .e4:hover {
+    transition: 1s;
+    color: #FAA990; }
 
 .credito {
   display: flex;
@@ -713,14 +661,11 @@ header {
     color: #dbdada;
     font-size: 14px; }
     .credito p .a1 {
-      color: #dbdada;
-      text-decoration: none;
-      transition: 1s; }
+      color: #dbdada; }
       .credito p .a1:hover {
-        color: #9BFBE1; }
+        color: #CE97FB; }
     .credito p .a2 {
       color: #dbdada;
-      text-decoration: none;
       transition: 1s; }
       .credito p .a2:hover {
         color: #FAA990; }
@@ -797,13 +742,15 @@ header {
 */
 /* MEDIA QUERY - MOBILE */
 @media only screen and (max-width: 600px) {
-  footer {
-    display: none !important; }
   header .bg-dark {
     height: auto; }
   header nav div a img {
     width: 14vw;
     margin-left: 0px; }
+  header .bg-dark .navBsUl {
+    font-size: 16px; }
+    header .bg-dark .navBsUl a:hover {
+      border-top: solid 3px transparent; }
   .mainHome {
     grid-template-rows: 85vh auto auto auto 20vh; }
     .mainHome .presentacionContenedor {
@@ -838,76 +785,42 @@ header {
           width: 85%;
           height: auto;
           margin: 0px 7%; }
-    .mainHome .services {
-      display: none;
-      /*    grid-template-columns: 100%;
-            grid-template-rows: auto repeat(8, 300px);
-            grid-template-areas: "encabezado"
-                                 "uno"
-                                 "dos"
-                                 "tres" 
-                                 "cuatro"
-                                 "cinco"
-                                 "seis"
-                                 "siete"
-                                 "ocho";
-
-            h2 {
-                font-size: 55px;
-                margin: 20px 0px;
-            }
-
-            h3 {
-                font-size: 30px;
-                bottom: 12% !important;
-            }
-
-            p {
-                font-size: 16px;
-                padding: 5px 0px;
-            }
-
-            .servicesContenidoGif {
-                height: 150px !important;
-                width: 150px !important;
-                top: 12% !important;
-            }
-            */ }
-    .mainHome .serviciosMobile {
+    .mainHome #servicios .services {
+      display: none; }
+    .mainHome #servicios .serviciosMobile {
       display: block;
-      grid-area: servicios;
       padding: 10px;
       margin-bottom: 40px; }
-      .mainHome .serviciosMobile .hSeccion {
+      .mainHome #servicios .serviciosMobile .hSeccion {
         font-size: 40px;
         margin: 30px 0px; }
-      .mainHome .serviciosMobile .accordion-item {
+      .mainHome #servicios .serviciosMobile .accordion-item {
         border-color: #2a2a2a;
         box-shadow: #363636 0px 0px 10px;
         background-color: black; }
-        .mainHome .serviciosMobile .accordion-item .accordion-button {
+        .mainHome #servicios .serviciosMobile .accordion-item .accordion-button {
           background-image: linear-gradient(45deg, #ce97fb, #f6a5eb9d, #9bfbe192, #67ebfa);
           color: black;
           font-weight: 700;
           border-radius: 5px 5px 0px 0px; }
-          .mainHome .serviciosMobile .accordion-item .accordion-button .serviciosMobileGif {
+          .mainHome #servicios .serviciosMobile .accordion-item .accordion-button .serviciosMobileGif {
             width: 50px;
             margin-right: 10px; }
-            .mainHome .serviciosMobile .accordion-item .accordion-button .serviciosMobileGif img {
+            .mainHome #servicios .serviciosMobile .accordion-item .accordion-button .serviciosMobileGif img {
               border-radius: 100px;
               border: solid 1px black; }
-        .mainHome .serviciosMobile .accordion-item .collapsed {
+        .mainHome #servicios .serviciosMobile .accordion-item .collapsed {
           background-image: none;
           background-color: black;
           color: white; }
-        .mainHome .serviciosMobile .accordion-item .accordion-button::after {
+        .mainHome #servicios .serviciosMobile .accordion-item .accordion-button::after {
           background-image: url("../../images/flecha.png");
           background-size: 0.8rem; }
-        .mainHome .serviciosMobile .accordion-item .accordion-button:not(.collapsed)::after {
+        .mainHome #servicios .serviciosMobile .accordion-item .accordion-button:not(.collapsed)::after {
           background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
-        .mainHome .serviciosMobile .accordion-item .accordion-button:focus {
+        .mainHome #servicios .serviciosMobile .accordion-item .accordion-button:focus {
           box-shadow: none; }
-      .mainHome .serviciosMobile .accordion-body {
+      .mainHome #servicios .serviciosMobile .accordion-body {
         border: solid 4px;
         border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1;
         border-top: none;
@@ -921,17 +834,27 @@ header {
       .mainHome .adn .tituloAdn2 {
         font-size: 50px;
         margin-bottom: 20px; }
-      .mainHome .adn div {
-        flex-direction: column; }
-        .mainHome .adn div .card {
-          width: 90%;
-          margin: 20px;
-          height: auto;
-          padding: 20px 30px; }
-          .mainHome .adn div .card img {
-            width: 100px;
-            margin-bottom: 20px; }
-          .mainHome .adn div .card h4 {
-            font-size: 25px; }
-          .mainHome .adn div .card p {
-            font-size: 16px; } }
+      .mainHome .adn div .card {
+        width: 90%;
+        margin: 20px;
+        height: auto;
+        padding: 20px 30px; }
+        .mainHome .adn div .card img {
+          width: 100px;
+          margin-bottom: 20px; }
+        .mainHome .adn div .card h4 {
+          font-size: 25px; }
+        .mainHome .adn div .card p {
+          font-size: 16px; }
+    .mainHome .clients h2 {
+      font-size: 40px;
+      margin-bottom: 40px; }
+    .mainHome .formulario .formularioForm {
+      max-width: 90%; }
+  .divFooter {
+    flex-direction: column;
+    align-items: center;
+    grid-row-gap: 30px;
+    padding-top: 50px; }
+    .divFooter .divFooter1 a img {
+      width: 30px; } }

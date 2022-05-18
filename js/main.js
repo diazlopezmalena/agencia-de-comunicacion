@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+    //carousel
     $('.customer-logos').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -20,6 +22,7 @@ $(document).ready(function(){
         }]
     });
 
+    // Formulario - Contacto
     let boton = document.getElementById("btn");
     boton.onclick = () =>{divFormulario.style.display = "flex";}
 
@@ -29,6 +32,11 @@ $(document).ready(function(){
     let salir = document.getElementById("salir");
     
     divFormulario.addEventListener("click", cerrar);
-    salir.addEventListener("click", cerrar);   
+    salir.addEventListener("click", cerrar);
+    
+    // Cerrar nav hamburguesa al hacer click - Bootstrap
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
 
 });
