@@ -1,5 +1,4 @@
-/*MEDIA QUERY - TABLET y DESKTOP S */
-
+/* MEDIA QUERY - TABLET y DESKTOP S */
 @media screen and (max-width: 1024px) {
 
     header { 
@@ -153,9 +152,7 @@
     }
 }
 
-
 /* MEDIA QUERY - MOBILE */
-
 @media only screen and (max-width: 600px) {
 
     header { 
@@ -378,6 +375,7 @@
                     width: 90%;
                     padding: 25px 0px;
                     border-top: solid 1px rgb(74, 74, 74);
+                    margin-bottom: 0px;
 
                     i {
                         padding-bottom: 7px;

@@ -677,7 +677,7 @@ header {
         border-radius: 50px;
         box-shadow: #faa990 0px 0px 10px; }
 
-/*MEDIA QUERY - TABLET y DESKTOP S */
+/* MEDIA QUERY - TABLET y DESKTOP S */
 @media screen and (max-width: 1024px) {
   header .bg-dark {
     height: auto; }
@@ -875,7 +875,8 @@ header {
         .mainHome .contacto .contactoVias .contactoViasItem {
           width: 90%;
           padding: 25px 0px;
-          border-top: solid 1px #4a4a4a; }
+          border-top: solid 1px #4a4a4a;
+          margin-bottom: 0px; }
           .mainHome .contacto .contactoVias .contactoViasItem i {
             padding-bottom: 7px;
             font-size: 18px; }
