@@ -5,7 +5,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 95vh auto 100vh auto 20vh;
+    grid-template-rows: 95vh auto 100vh auto auto;
     grid-template-areas: "presentacion"
                          "servicios"
                          "adn"
@@ -497,94 +497,94 @@
     /** Clientes: en partial _carousel **/
 
     /** Contacto **/
-    .contacto{
+
+    .contacto {
+        grid-area: contacto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: #000;
+        padding: 30px 0px 89px 0px;
+    
+        .contactoH {
+            text-align: center;
 
-        .titulo1{
-            font-family: 'Times New Roman', Times, serif;
-            color: rgba(255, 255, 255, 0.605);
-            font-size: 40px;
-            font-style: italic;
-            margin-bottom: -35px;
-            margin-left: -15px;
+            p {
+                font-family: $font-secundaria;
+                color: $color-principal;
+                opacity: 0.5;
+                font-size: 30px;
+                font-style: italic;
+                margin-bottom: -15px;
+            }
+
         }
 
-        .titulo2{
-            margin-top: 3vh;
-            font-size: 65px;
-        }
-    }
-
-    .contactoFlex{
-        background-color: #000;
-
-        .sede, .email, .whatsapp{
+        .contactoVias {
+            margin: 70px 0px 50px 0px;
             display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
 
-            div{
+            .contactoViasItem {
                 display: flex;
-                flex-direction: row;
-                justify-content: center;
+                flex-direction: column;
+                justify-content: start;
                 align-items: center;
-                margin-bottom: 2vh;
-            }
 
-            p, h3, i{
-                color: #fff;
-                line-height: 1.2;
-                
-                .a1{
-                    text-decoration: none;
-                    color: #fff;
-                    transition: 1s;
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 2vh;
+                }
+            
+                p, h3, i, a {
+                    color: $color-principal;
+                    line-height: 1.2;
+                        
+                    .a1{
+                        color: $color-principal;
+                        transition: 1s;
 
-                    &:hover{
-                        color: #CE97FB;
+                        &:hover{
+                            color: #CE97FB;
+                        }
+                    }
+
+                    .a2{
+                        @extend .a1;
+
+                        &:hover{
+                            color: #9BFBE1;
+                        }
+                    }
+
+                    .a3{
+                        @extend .a1;
+
+                        &:hover{
+                            color: #FAA990;
+                        }
                     }
                 }
-
-                .a2{
-                    text-decoration: none;
-                    color: #fff;
-                    transition: 1s;
-
-                    &:hover{
-                        color: #9BFBE1;
-                    }
-                }
             }
+            
         }
     }
 
-}
 
-/*FOOTER*/
-.footerDiv {
-    height: auto;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-family: $font-principal;
 
-    .divFooter1 {
-        flex-direction: column;
-        justify-items: start;
 
-        .logo {
-            width: 3vw;
-        }
 
-        .divFooter1div1 {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 5vw;
-        }
-    }
+
+    
+
+
+
+
 
 }
+

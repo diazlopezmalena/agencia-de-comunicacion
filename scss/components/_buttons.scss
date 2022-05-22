@@ -10,3 +10,20 @@
 .whatsappfijo:hover {
     color: #25D366; 
 }
+
+.contacto {
+    .btn {
+        color: #fff;
+        border: 3px solid;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1;
+        padding: 10px 20px;
+
+        &:hover{
+            transform: scale(1.1);
+            border-image: linear-gradient(to bottom, #67EBFA, #CE97FB 100%) 1;
+            transition: 1s;
+        }        
+    }
+}

@@ -77,6 +77,18 @@ header {
 .whatsappfijo:hover {
   color: #25D366; }
 
+.contacto .btn {
+  color: #fff;
+  border: 3px solid;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1;
+  padding: 10px 20px; }
+  .contacto .btn:hover {
+    transform: scale(1.1);
+    border-image: linear-gradient(to bottom, #67EBFA, #CE97FB 100%) 1;
+    transition: 1s; }
+
 /* NAV BS */
 .bg-dark {
   background-color: black !important;
@@ -102,8 +114,12 @@ header {
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 95vh auto 100vh auto 20vh;
-  grid-template-areas: "presentacion" "servicios" "adn" "clientes" "contacto";
+  grid-template-rows: 95vh auto 100vh auto auto;
+  grid-template-areas: "presentacion"
+ "servicios"
+ "adn"
+ "clientes"
+ "contacto";
   /** Presentación **/
   /** Sevicios **/
   /** ADN **/
@@ -198,7 +214,9 @@ header {
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
     grid-template-rows: auto 20vw 20vw;
-    grid-template-areas: "encabezado encabezado encabezado encabezado" "uno dos tres cuatro" "cinco seis siete ocho";
+    grid-template-areas: "encabezado encabezado encabezado encabezado"
+ "uno dos tres cuatro"
+ "cinco seis siete ocho";
     align-items: center;
     justify-content: center;
     position: relative;
@@ -385,65 +403,50 @@ header {
           word-wrap: break-word;
           hyphens: auto; }
   .mainHome .contacto {
+    grid-area: contacto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #000; }
-    .mainHome .contacto .titulo1 {
-      font-family: 'Times New Roman', Times, serif;
-      color: rgba(255, 255, 255, 0.605);
-      font-size: 40px;
-      font-style: italic;
-      margin-bottom: -35px;
-      margin-left: -15px; }
-    .mainHome .contacto .titulo2 {
-      margin-top: 3vh;
-      font-size: 65px; }
-  .mainHome .contactoFlex {
-    background-color: #000; }
-    .mainHome .contactoFlex .sede, .mainHome .contactoFlex .email, .mainHome .contactoFlex .whatsapp {
+    padding: 30px 0px 89px 0px; }
+    .mainHome .contacto .contactoH {
+      text-align: center; }
+      .mainHome .contacto .contactoH p {
+        font-family: "Times New Roman", Times, serif;
+        color: white;
+        opacity: 0.5;
+        font-size: 30px;
+        font-style: italic;
+        margin-bottom: -15px; }
+    .mainHome .contacto .contactoVias {
+      margin: 70px 0px 50px 0px;
       display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center; }
-      .mainHome .contactoFlex .sede div, .mainHome .contactoFlex .email div, .mainHome .contactoFlex .whatsapp div {
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 100%; }
+      .mainHome .contacto .contactoVias .contactoViasItem {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 2vh; }
-      .mainHome .contactoFlex .sede p, .mainHome .contactoFlex .sede h3, .mainHome .contactoFlex .sede i, .mainHome .contactoFlex .email p, .mainHome .contactoFlex .email h3, .mainHome .contactoFlex .email i, .mainHome .contactoFlex .whatsapp p, .mainHome .contactoFlex .whatsapp h3, .mainHome .contactoFlex .whatsapp i {
-        color: #fff;
-        line-height: 1.2; }
-        .mainHome .contactoFlex .sede p .a1, .mainHome .contactoFlex .sede h3 .a1, .mainHome .contactoFlex .sede i .a1, .mainHome .contactoFlex .email p .a1, .mainHome .contactoFlex .email h3 .a1, .mainHome .contactoFlex .email i .a1, .mainHome .contactoFlex .whatsapp p .a1, .mainHome .contactoFlex .whatsapp h3 .a1, .mainHome .contactoFlex .whatsapp i .a1 {
-          text-decoration: none;
-          color: #fff;
-          transition: 1s; }
-          .mainHome .contactoFlex .sede p .a1:hover, .mainHome .contactoFlex .sede h3 .a1:hover, .mainHome .contactoFlex .sede i .a1:hover, .mainHome .contactoFlex .email p .a1:hover, .mainHome .contactoFlex .email h3 .a1:hover, .mainHome .contactoFlex .email i .a1:hover, .mainHome .contactoFlex .whatsapp p .a1:hover, .mainHome .contactoFlex .whatsapp h3 .a1:hover, .mainHome .contactoFlex .whatsapp i .a1:hover {
-            color: #CE97FB; }
-        .mainHome .contactoFlex .sede p .a2, .mainHome .contactoFlex .sede h3 .a2, .mainHome .contactoFlex .sede i .a2, .mainHome .contactoFlex .email p .a2, .mainHome .contactoFlex .email h3 .a2, .mainHome .contactoFlex .email i .a2, .mainHome .contactoFlex .whatsapp p .a2, .mainHome .contactoFlex .whatsapp h3 .a2, .mainHome .contactoFlex .whatsapp i .a2 {
-          text-decoration: none;
-          color: #fff;
-          transition: 1s; }
-          .mainHome .contactoFlex .sede p .a2:hover, .mainHome .contactoFlex .sede h3 .a2:hover, .mainHome .contactoFlex .sede i .a2:hover, .mainHome .contactoFlex .email p .a2:hover, .mainHome .contactoFlex .email h3 .a2:hover, .mainHome .contactoFlex .email i .a2:hover, .mainHome .contactoFlex .whatsapp p .a2:hover, .mainHome .contactoFlex .whatsapp h3 .a2:hover, .mainHome .contactoFlex .whatsapp i .a2:hover {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center; }
+        .mainHome .contacto .contactoVias .contactoViasItem div {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 2vh; }
+        .mainHome .contacto .contactoVias .contactoViasItem p, .mainHome .contacto .contactoVias .contactoViasItem h3, .mainHome .contacto .contactoVias .contactoViasItem i, .mainHome .contacto .contactoVias .contactoViasItem a {
+          color: white;
+          line-height: 1.2; }
+          .mainHome .contacto .contactoVias .contactoViasItem p .a1, .mainHome .contacto .contactoVias .contactoViasItem p .a2, .mainHome .contacto .contactoVias .contactoViasItem p .a3, .mainHome .contacto .contactoVias .contactoViasItem h3 .a1, .mainHome .contacto .contactoVias .contactoViasItem h3 .a2, .mainHome .contacto .contactoVias .contactoViasItem h3 .a3, .mainHome .contacto .contactoVias .contactoViasItem i .a1, .mainHome .contacto .contactoVias .contactoViasItem i .a2, .mainHome .contacto .contactoVias .contactoViasItem i .a3, .mainHome .contacto .contactoVias .contactoViasItem a .a1, .mainHome .contacto .contactoVias .contactoViasItem a .a2, .mainHome .contacto .contactoVias .contactoViasItem a .a3 {
+            color: white;
+            transition: 1s; }
+            .mainHome .contacto .contactoVias .contactoViasItem p .a1:hover, .mainHome .contacto .contactoVias .contactoViasItem p .a2:hover, .mainHome .contacto .contactoVias .contactoViasItem p .a3:hover, .mainHome .contacto .contactoVias .contactoViasItem h3 .a1:hover, .mainHome .contacto .contactoVias .contactoViasItem h3 .a2:hover, .mainHome .contacto .contactoVias .contactoViasItem h3 .a3:hover, .mainHome .contacto .contactoVias .contactoViasItem i .a1:hover, .mainHome .contacto .contactoVias .contactoViasItem i .a2:hover, .mainHome .contacto .contactoVias .contactoViasItem i .a3:hover, .mainHome .contacto .contactoVias .contactoViasItem a .a1:hover, .mainHome .contacto .contactoVias .contactoViasItem a .a2:hover, .mainHome .contacto .contactoVias .contactoViasItem a .a3:hover {
+              color: #CE97FB; }
+          .mainHome .contacto .contactoVias .contactoViasItem p .a2:hover, .mainHome .contacto .contactoVias .contactoViasItem h3 .a2:hover, .mainHome .contacto .contactoVias .contactoViasItem i .a2:hover, .mainHome .contacto .contactoVias .contactoViasItem a .a2:hover {
             color: #9BFBE1; }
-
-/*FOOTER*/
-.footerDiv {
-  height: auto;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-family: "Plus Jakarta Sans", sans-serif; }
-  .footerDiv .divFooter1 {
-    flex-direction: column;
-    justify-items: start; }
-    .footerDiv .divFooter1 .logo {
-      width: 3vw; }
-    .footerDiv .divFooter1 .divFooter1div1 {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 5vw; }
+          .mainHome .contacto .contactoVias .contactoViasItem p .a3:hover, .mainHome .contacto .contactoVias .contactoViasItem h3 .a3:hover, .mainHome .contacto .contactoVias .contactoViasItem i .a3:hover, .mainHome .contacto .contactoVias .contactoViasItem a .a3:hover {
+            color: #FAA990; }
 
 /*** Clientes - Carousel ***/
 .clients {
@@ -452,7 +455,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 2vw 0vw 8vw 0vw; }
+  margin: 3vw 0vw 5vw 0vw; }
 
 .clients h2 {
   margin-bottom: 60px; }
@@ -826,7 +829,15 @@ header {
     .mainHome .services {
       grid-template-columns: 100%;
       grid-template-rows: auto repeat(8, 70vh);
-      grid-template-areas: "encabezado" "uno" "dos" "tres"  "cuatro" "cinco" "seis" "siete" "ocho"; }
+      grid-template-areas: "encabezado"
+ "uno"
+ "dos"
+ "tres" 
+ "cuatro"
+ "cinco"
+ "seis"
+ "siete"
+ "ocho"; }
       .mainHome .services h2 {
         font-size: 55px;
         margin: 20px 0px; }
