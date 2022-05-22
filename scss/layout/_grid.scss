@@ -14,7 +14,6 @@
 
 
     /** Presentación **/
-
     .presentacionContenedor {
         grid-area: presentacion;
         width: 100%;
@@ -112,7 +111,6 @@
     }
 
     /** Sevicios **/
-
     #servicios {
         grid-area: servicios;
 
@@ -429,7 +427,7 @@
         padding-bottom: 5vw;
         text-align: center;        
 
-        .tituloAdn{
+        .tituloAdn {
             font-family: $font-secundaria;
             color: rgba(255, 255, 255, 0.605);
             font-size: 4vw;
@@ -446,26 +444,24 @@
 
         div {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             margin-top: 3vw;
             font-family: $font-principal;
-            font-size: 5vw;
+            flex-wrap: wrap;
 
             .card {
                 display: flex;
                 flex-direction: column;
-                height: 25vw;
-                width: 23vw;
-                justify-content: center;
+                height: auto;
+                width: 25%;
+                justify-content: flex-start;
                 align-items: center;
                 background-color: rgba(255, 255, 255, 0.441);
                 border-radius: 15px;
-                padding: 0vh 4vh;
-                margin: 0vh 4vh;
+                padding: 4vh 4vh 2vh 4vh;
+                margin: 0vh 10px;
                 border: none;
                 box-shadow: rgba(77, 77, 77, 0.221) 0px 0px 10px;
-
 
                 img {
                     border-radius: 100px;
@@ -519,7 +515,6 @@
             margin: 70px 0px 50px 0px;
             display: flex;
             justify-content: space-around;
-            align-items: flex-start;
             flex-wrap: wrap-reverse;
             width: 100%;
 

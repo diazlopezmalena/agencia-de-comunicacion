@@ -360,22 +360,21 @@ header {
       font-family: "Plus Jakarta Sans", sans-serif; }
     .mainHome .adn div {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       margin-top: 3vw;
       font-family: "Plus Jakarta Sans", sans-serif;
-      font-size: 5vw; }
+      flex-wrap: wrap; }
       .mainHome .adn div .card {
         display: flex;
         flex-direction: column;
-        height: 25vw;
-        width: 23vw;
-        justify-content: center;
+        height: auto;
+        width: 25%;
+        justify-content: flex-start;
         align-items: center;
         background-color: rgba(255, 255, 255, 0.441);
         border-radius: 15px;
-        padding: 0vh 4vh;
-        margin: 0vh 4vh;
+        padding: 4vh 4vh 2vh 4vh;
+        margin: 0vh 10px;
         border: none;
         box-shadow: rgba(77, 77, 77, 0.221) 0px 0px 10px; }
         .mainHome .adn div .card img {
@@ -412,7 +411,6 @@ header {
       margin: 70px 0px 50px 0px;
       display: flex;
       justify-content: space-around;
-      align-items: flex-start;
       flex-wrap: wrap-reverse;
       width: 100%; }
       .mainHome .contacto .contactoVias .contactoViasItem {
@@ -679,45 +677,76 @@ header {
         border-radius: 50px;
         box-shadow: #faa990 0px 0px 10px; }
 
-/*MEDIA QUERY - DESKTOP*/
-/*
-@media screen and (min-width: 769px){
+/*MEDIA QUERY - TABLET y DESKTOP S */
+@media screen and (max-width: 1024px) {
+  header .bg-dark {
+    height: auto; }
+  header nav div a img {
+    width: 50px;
+    margin-left: 0px; }
+  header .bg-dark .navBsUl {
+    font-size: 16px; }
+    header .bg-dark .navBsUl a:hover {
+      border-top: solid 3px transparent; }
+  .mainHome {
+    grid-template-rows: 85vh auto auto auto auto; }
+    .mainHome .presentacionContenedor .presentacionH p {
+      font-size: 35px;
+      margin-left: -5px;
+      margin-bottom: -13px; }
+    .mainHome .presentacionContenedor .presentacionH h1 {
+      font-size: 45px; }
+    .mainHome .presentacionContenedor .presentacionH .presentacionP {
+      width: auto; }
+      .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPGif {
+        width: 60px;
+        padding-left: 3px; }
+      .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPsubtitulo {
+        font-size: 13px;
+        line-height: 1.4;
+        padding: 0px 0px 15px 15px; }
+    .mainHome #servicios .services {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 43vh 43vh 43vh 43vh;
+      grid-template-areas: "encabezado encabezado" "uno dos" "tres cuatro" "cinco seis" "siete ocho"; }
+      .mainHome #servicios .services h2 {
+        font-size: 50px; }
+      .mainHome #servicios .services h3 {
+        font-size: 25px; }
+      .mainHome #servicios .services p {
+        font-size: 15px; }
+      .mainHome #servicios .services .servicesContenidoGif {
+        width: 100px !important; }
+    .mainHome .adn .tituloAdn {
+      font-size: 35px; }
+    .mainHome .adn .tituloAdn2 {
+      font-size: 50px; }
+    .mainHome .adn div .card {
+      margin: 0px 5px;
+      height: auto;
+      width: 30%; }
+      .mainHome .adn div .card img {
+        width: 80px; }
+      .mainHome .adn div .card h4 {
+        font-size: 17px; }
+      .mainHome .adn div .card p {
+        font-size: 15px; }
+    .mainHome .clients h2 {
+      font-size: 50px; }
+    .mainHome .contacto .contactoH h2 {
+      font-size: 50px; }
+    .mainHome .contacto .contactoVias {
+      margin-bottom: 10px; }
+      .mainHome .contacto .contactoVias .contactoViasItem {
+        width: 45%;
+        margin-bottom: 40px; }
+      .mainHome .contacto .contactoVias h3 {
+        font-size: 20px; }
+      .mainHome .contacto .contactoVias p, .mainHome .contacto .contactoVias a {
+        font-size: 16px; }
+      .mainHome .contacto .contactoVias i {
+        padding-bottom: 8px; } }
 
-
-    //CONTACTO
-    .contacto{
-        justify-content: center;
-        align-items: center;
-        padding: 10vh 0;
-    }
-
-    .contactoFlex{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "sede email wpp";
-        padding-bottom: 10vh;
-
-        .sede{
-            grid-area: sede;
-        }
-
-        .email{
-            grid-area: email;
-        }
-
-        .whatsapp{
-            grid-area: wpp;
-        }
-
-        p{
-            font-size: 18px;
-        }
-    }
-    
-}
-
-*/
 /* MEDIA QUERY - MOBILE */
 @media only screen and (max-width: 600px) {
   header .bg-dark {

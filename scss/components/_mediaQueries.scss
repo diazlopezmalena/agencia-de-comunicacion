@@ -1,43 +1,157 @@
-/*MEDIA QUERY - DESKTOP*/
+/*MEDIA QUERY - TABLET y DESKTOP S */
 
-/*
-@media screen and (min-width: 769px){
+@media screen and (max-width: 1024px) {
 
-
-    //CONTACTO
-    .contacto{
-        justify-content: center;
-        align-items: center;
-        padding: 10vh 0;
-    }
-
-    .contactoFlex{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "sede email wpp";
-        padding-bottom: 10vh;
-
-        .sede{
-            grid-area: sede;
+    header { 
+        .bg-dark {
+            height: auto;
         }
 
-        .email{
-            grid-area: email;
+        nav div a img {
+            width: 50px;
+            margin-left: 0px;
         }
 
-        .whatsapp{
-            grid-area: wpp;
-        }
-
-        p{
-            font-size: 18px;
+        .bg-dark {
+        
+            .navBsUl {
+                font-size: 16px;
+                a:hover {
+                    border-top: solid 3px transparent;
+                }
+            }
         }
     }
+
+    .mainHome {
+        grid-template-rows: 85vh auto auto auto auto;
+
+        .presentacionContenedor {
+
+            .presentacionH {
+                
+                p {                    
+                    font-size: 35px;
+                    margin-left: -5px;
+                    margin-bottom: -13px;
+                }
+
+                h1 {
+                    font-size: 45px;
+                }
+
+                .presentacionP {
+                    width: auto;
+
+                    #presentacionPGif {
+                        width: 60px;
+                        padding-left: 3px;
+                    }
+                    
+                    #presentacionPsubtitulo {
+                        font-size: 13px;
+                        line-height: 1.4;
+                        padding: 0px 0px 15px 15px;
+                    }
+                }
+            }            
+        }
+
+        #servicios { 
+            .services{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto 43vh 43vh 43vh 43vh;
+                grid-template-areas: "encabezado encabezado"
+                                    "uno dos"
+                                    "tres cuatro"
+                                    "cinco seis"
+                                    "siete ocho";
+
+                h2 {
+                    font-size: 50px;
+                }
+
+                h3 {
+                    font-size: 25px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+                .servicesContenidoGif {
+                    width: 100px !important;
+                }
+
+            }
+        }
+
+        .adn {
+
+            .tituloAdn {
+                font-size: 35px;
+            }
     
-}
+            .tituloAdn2 {
+                font-size: 50px;
+            }
 
-*/
+            div {
+
+                .card {
+                    margin: 0px 5px;
+                    height: auto;
+                    width: 30%;
+
+                    img {
+                        width: 80px;
+                    }
+
+                    h4 {
+                        font-size: 17px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                    }
+                    
+                }
+            }
+        }
+
+        .clients h2 {
+            font-size: 50px;
+        }
+
+        .contacto {
+
+            .contactoH h2 {
+                font-size: 50px;
+            }
+
+            .contactoVias {
+                margin-bottom: 10px;
+
+                .contactoViasItem {
+                    width: 45%;
+                    margin-bottom: 40px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                p, a {
+                    font-size: 16px;
+                }
+
+                i {
+                    padding-bottom: 8px;
+                }
+            }
+        }
+    }
+}
 
 
 /* MEDIA QUERY - MOBILE */
