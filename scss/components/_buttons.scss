@@ -3,13 +3,21 @@
     bottom: 20px;
     right: 20px;
     z-index: 19;
-    filter: drop-shadow(0 0.2vh 0.2vh #797979);
-    color: #fff;
-}
-    
-.whatsappfijo:hover {
-    color: #25D366; 
-    transition: 1s;
+    background-color: transparent;
+    border: none;
+
+
+    i {
+
+        filter: drop-shadow(0 0.2vh 0.2vh #797979);
+        color: #fff;
+
+    }
+
+    i:hover {
+        color: #25D366; 
+        transition: 1s;
+    }
 }
 
 .contacto {

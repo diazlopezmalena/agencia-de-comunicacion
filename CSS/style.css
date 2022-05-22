@@ -71,12 +71,14 @@ header {
   bottom: 20px;
   right: 20px;
   z-index: 19;
-  filter: drop-shadow(0 0.2vh 0.2vh #797979);
-  color: #fff; }
-
-.whatsappfijo:hover {
-  color: #25D366;
-  transition: 1s; }
+  background-color: transparent;
+  border: none; }
+  .whatsappfijo i {
+    filter: drop-shadow(0 0.2vh 0.2vh #797979);
+    color: #fff; }
+  .whatsappfijo i:hover {
+    color: #25D366;
+    transition: 1s; }
 
 .contacto .btn {
   color: #fff;
@@ -687,7 +689,7 @@ header {
     header .bg-dark .navBsUl a:hover {
       border-top: solid 3px transparent; }
   .mainHome {
-    grid-template-rows: 85vh auto auto auto auto; }
+    grid-template-rows: 60vh auto auto auto auto; }
     .mainHome .presentacionContenedor .presentacionH p {
       font-size: 35px;
       margin-left: -5px;
