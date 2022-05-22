@@ -66,7 +66,7 @@
     }
 
     .mainHome { 
-        grid-template-rows: 85vh auto auto auto 20vh;
+        grid-template-rows: 85vh auto auto auto auto;
 
         .presentacionContenedor {
             align-content: flex-start;
@@ -145,6 +145,7 @@
                         color: $background-color-principal;
                         font-weight: 700;
                         border-radius: 5px 5px 0px 0px;
+                        position: relative;
         
                         .serviciosMobileGif {
                             width: 50px;
@@ -155,26 +156,37 @@
                                 border: solid 1px black;
                             }
 
-                        }                    
+                        }
+
+                        .serviciosMobileArrow {
+                            width: 14px;
+                            position: absolute;
+                            right: 20px;
+                            transition: 0.7s;
+                        }                        
                     }
 
                     .collapsed {
                         background-image: none;
-                        background-color: black;
+                        background-color: $background-color-principal;
                         color: $color-principal;
                     }
 
                     .accordion-button::after { 
-                        background-image: url("../../images/flecha.png");
-                        background-size: 0.8rem;
+                        background-image: none;
                     }
 
                     .accordion-button:not(.collapsed)::after {
-                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                        background-image: none;
                     }
 
                     .accordion-button:focus {
-                        box-shadow: none;                    
+                        box-shadow: none;
+                        
+                        .serviciosMobileArrow {
+                            transform: rotate(90deg);
+                            
+                        }
                     }
                 }
 
@@ -183,7 +195,7 @@
                     border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1;
                     border-top: none;
                     background-color: $background-color-principal;
-                    color: $color-principal;
+                    color: $color-principal;                    
                 }
             }
         }
@@ -231,9 +243,47 @@
             margin-bottom: 40px;
         }
 
-
         .contacto {
-            display: none;
+            padding-bottom: 50px;
+
+            .contactoH {
+                p {
+                    font-size: 16px;
+                    margin-bottom: -10px;
+                }
+
+                h2 {
+                    font-size: 40px;
+                }
+            }
+
+            .contactoVias {
+                margin: 10px 0px;
+
+                .contactoViasItem {
+                    width: 90%;
+                    padding: 25px 0px;
+                    border-top: solid 1px rgb(74, 74, 74);
+
+                    i {
+                        padding-bottom: 7px;
+                        font-size: 18px;
+                    }
+
+                    h3 {
+                        font-size: 19px;
+                    }
+    
+                    p { 
+                        font-size: 16px;
+                    }
+
+                }
+
+                .instagram {
+                    border-top: none;
+                }
+            }
         }
 
         .formulario .formularioForm {
