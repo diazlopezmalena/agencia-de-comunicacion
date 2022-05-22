@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     //carousel
     $('.customer-logos').slick({
         slidesToShow: 6,
@@ -34,9 +33,9 @@ $(document).ready(function(){
     divFormulario.addEventListener("click", cerrar);
     salir.addEventListener("click", cerrar);
     
-    // Cerrar nav hamburguesa al hacer click - Bootstrap
+    // Cerrar nav hamburguesa al hacer click
     $('.navbar-nav>li>a').on('click', function(){
-        $('.navbar-collapse').collapse('hide');
-    });
-
+        $('.navbar-toggler').addClass('collapsed');
+        $('.navbar-collapse').removeClass('show').addClass('hide');
+    })
 });
