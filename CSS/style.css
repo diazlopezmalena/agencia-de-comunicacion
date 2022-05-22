@@ -75,7 +75,8 @@ header {
   color: #fff; }
 
 .whatsappfijo:hover {
-  color: #25D366; }
+  color: #25D366;
+  transition: 1s; }
 
 .contacto .btn {
   color: #fff;
@@ -114,7 +115,7 @@ header {
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 95vh auto 100vh auto auto;
+  grid-template-rows: 95vh auto auto auto auto;
   grid-template-areas: "presentacion" "servicios" "adn" "clientes" "contacto";
   /** Presentación **/
   /** Sevicios **/
@@ -182,8 +183,6 @@ header {
           font-size: 1.2vw;
           color: black;
           padding-left: 30px; }
-      .mainHome .presentacionContenedor .presentacionH .presentacionFlecha {
-        visibility: hidden; }
     .mainHome .presentacionContenedor .presentacionDescarga {
       text-align: center;
       align-self: flex-end;
@@ -641,8 +640,7 @@ header {
       .credito p .a1:hover, .credito .mainHome .contacto .contactoVias .contactoViasItem p .a2:hover, .mainHome .contacto .contactoVias .contactoViasItem .credito p .a2:hover, .credito p .mainHome .contacto .contactoVias .contactoViasItem h3 .a2:hover, .credito p .mainHome .contacto .contactoVias .contactoViasItem i .a2:hover, .credito p .mainHome .contacto .contactoVias .contactoViasItem a .a2:hover, .credito .mainHome .contacto .contactoVias .contactoViasItem p .a3:hover, .mainHome .contacto .contactoVias .contactoViasItem .credito p .a3:hover, .credito p .mainHome .contacto .contactoVias .contactoViasItem h3 .a3:hover, .credito p .mainHome .contacto .contactoVias .contactoViasItem i .a3:hover, .credito p .mainHome .contacto .contactoVias .contactoViasItem a .a3:hover {
         color: #CE97FB; }
     .credito p .a2 {
-      color: #dbdada;
-      transition: 1s; }
+      color: #dbdada; }
       .credito p .a2:hover {
         color: #FAA990; }
 
@@ -678,7 +676,7 @@ header {
         box-shadow: #faa990 0px 0px 10px; }
 
 /* MEDIA QUERY - TABLET y DESKTOP S */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
   header .bg-dark {
     height: auto; }
   header nav div a img {
@@ -706,17 +704,53 @@ header {
         line-height: 1.4;
         padding: 0px 0px 15px 15px; }
     .mainHome #servicios .services {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto 43vh 43vh 43vh 43vh;
-      grid-template-areas: "encabezado encabezado" "uno dos" "tres cuatro" "cinco seis" "siete ocho"; }
-      .mainHome #servicios .services h2 {
-        font-size: 50px; }
-      .mainHome #servicios .services h3 {
-        font-size: 25px; }
-      .mainHome #servicios .services p {
-        font-size: 15px; }
-      .mainHome #servicios .services .servicesContenidoGif {
-        width: 100px !important; }
+      display: none; }
+    .mainHome #servicios .serviciosMobile {
+      display: block;
+      padding: 10px;
+      margin: 0px 70px 40px 70px; }
+      .mainHome #servicios .serviciosMobile .hSeccion {
+        font-size: 40px;
+        margin: 30px 0px; }
+      .mainHome #servicios .serviciosMobile .accordion-item {
+        border-color: #2a2a2a;
+        box-shadow: #363636 0px 0px 10px;
+        background-color: black; }
+        .mainHome #servicios .serviciosMobile .accordion-item .accordion-button {
+          background-image: linear-gradient(45deg, #ce97fb, #f6a5eb9d, #9bfbe192, #67ebfa);
+          color: black;
+          font-weight: 700;
+          border-radius: 5px 5px 0px 0px;
+          position: relative; }
+          .mainHome #servicios .serviciosMobile .accordion-item .accordion-button .serviciosMobileGif {
+            width: 50px;
+            margin-right: 10px; }
+            .mainHome #servicios .serviciosMobile .accordion-item .accordion-button .serviciosMobileGif img {
+              border-radius: 100px;
+              border: solid 1px black; }
+          .mainHome #servicios .serviciosMobile .accordion-item .accordion-button .serviciosMobileArrow {
+            width: 14px;
+            position: absolute;
+            right: 20px;
+            transition: 0.7s; }
+        .mainHome #servicios .serviciosMobile .accordion-item .collapsed {
+          background-image: none;
+          background-color: black;
+          color: white; }
+        .mainHome #servicios .serviciosMobile .accordion-item .accordion-button::after {
+          background-image: none; }
+        .mainHome #servicios .serviciosMobile .accordion-item .accordion-button:not(.collapsed)::after {
+          background-image: none; }
+        .mainHome #servicios .serviciosMobile .accordion-item .accordion-button:focus {
+          box-shadow: none; }
+          .mainHome #servicios .serviciosMobile .accordion-item .accordion-button:focus .serviciosMobileArrow {
+            transform: rotate(90deg); }
+      .mainHome #servicios .serviciosMobile .accordion-body {
+        border: solid 4px;
+        border-image: linear-gradient(to bottom, #CE97FB, #67EBFA 100%) 1;
+        border-top: none;
+        background-color: black;
+        color: white; }
     .mainHome .adn .tituloAdn {
       font-size: 35px; }
     .mainHome .adn .tituloAdn2 {

@@ -5,7 +5,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 95vh auto 100vh auto auto;
+    grid-template-rows: 95vh auto auto auto auto;
     grid-template-areas: "presentacion"
                          "servicios"
                          "adn"
@@ -85,10 +85,6 @@
                     color: rgb(0, 0, 0);
                     padding-left: 30px;
                 }
-            }
-            
-            .presentacionFlecha {
-                visibility: hidden;
             }
         }
 
