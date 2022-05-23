@@ -689,7 +689,7 @@ header {
     header .bg-dark .navBsUl a:hover {
       border-top: solid 3px transparent; }
   .mainHome {
-    grid-template-rows: 60vh auto auto auto auto; }
+    grid-template-rows: 400px auto auto auto auto; }
     .mainHome .presentacionContenedor .presentacionH p {
       font-size: 35px;
       margin-left: -5px;
@@ -697,7 +697,8 @@ header {
     .mainHome .presentacionContenedor .presentacionH h1 {
       font-size: 45px; }
     .mainHome .presentacionContenedor .presentacionH .presentacionP {
-      width: auto; }
+      width: auto;
+      bottom: auto; }
       .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPGif {
         width: 60px;
         padding-left: 3px; }
