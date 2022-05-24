@@ -1,10 +1,25 @@
 /* MEDIA QUERY - TABLET y DESKTOP S */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
 
-    header { 
-        .bg-dark {
-            height: auto;
-        }
+    /* Cabecera plegable */
+    .menuScroll {
+        transition: transform 0.4s;
+        background-color: $background-color-principal;
+    }
+          
+    .scroll-up header {
+        transform: none;
+    }
+
+    .scroll-down header {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    header {
+        position: fixed;
+        right: 0px;
+        left: 0px;
+        transition: transform 0.4s;
 
         nav div a img {
             width: 50px;
@@ -12,7 +27,8 @@
         }
 
         .bg-dark {
-        
+            height: 70px;
+
             .navBsUl {
                 font-size: 16px;
                 a:hover {
@@ -23,9 +39,10 @@
     }
 
     .mainHome {
-        grid-template-rows: 400px auto auto auto auto;
+        grid-template-rows: 500px auto auto auto auto;
 
         .presentacionContenedor {
+            padding-top: 70px;
 
             .presentacionH {
                 
@@ -219,10 +236,25 @@
 /* MEDIA QUERY - MOBILE */
 @media only screen and (max-width: 600px) {
 
+    /* Cabecera plegable */
+    .menuScroll {
+        transition: transform 0.4s;
+        background-color: $background-color-principal;
+    }
+          
+    .scroll-up header {
+        transform: none;
+    }
+
+    .scroll-down header {
+        transform: translate3d(0, -100%, 0);
+    }
+
     header { 
-        .bg-dark {
-            height: auto;
-        }
+        position: fixed;
+        right: 0px;
+        left: 0px;
+        transition: transform 0.4s;
 
         nav div a img {
             width: 14vw;
@@ -230,6 +262,7 @@
         }
 
         .bg-dark {
+            height: 70px;
         
             .navBsUl {
                 font-size: 16px;
@@ -237,15 +270,16 @@
                     border-top: solid 3px transparent;
                 }
             }
-        }
+        } 
     }
 
     .mainHome { 
-        grid-template-rows: 85vh auto auto auto auto;
+        grid-template-rows: 99vh auto auto auto auto;
 
         .presentacionContenedor {
             align-content: flex-start;
             padding: 0px;
+            margin-top: 70px;
 
             .presentacionH {
                 width: 85%;
@@ -253,13 +287,13 @@
                 padding-top: 30px;
 
                 p {                    
-                    font-size: 9.5vw;
+                    font-size: 30px;
                     margin-left: -5px;
                     margin-bottom: -13px;
                 }
 
                 h1 {
-                    font-size: 10.5vw;
+                    font-size: 40px;
                 }
 
                 .presentacionP {
@@ -296,7 +330,8 @@
             
         }
 
-        #servicios { 
+        #servicios {
+            
             .services {
                 display: none;
             }
@@ -304,11 +339,11 @@
             .serviciosMobile {
                 display: block;
                 padding: 10px;
-                margin-bottom: 40px;
+                margin-bottom: 60px;
 
                 .hSeccion {
                     font-size: 40px;
-                    padding: 13vh 0px 11vh 0px;
+                    padding: 70px 0px 35px 0px;
                 }
 
                 .accordion-item {
@@ -377,17 +412,17 @@
         }
 
         .adn {
-            padding-top: 20px;
-            
+            padding-bottom: 70px;
+
             .tituloAdn{
                 font-size: 40px;
-                margin-bottom: -30px;
-                padding-top: 6vh;
+                margin-bottom: -27px;
+                margin-top: 70px;
             }
     
             .tituloAdn2 {
                 font-size: 50px;
-                margin-bottom: 6vh;
+                margin-bottom: 35px;
             }
 
             div {
@@ -420,20 +455,20 @@
             margin-bottom: 0px;
             
             h2 {
-            font-size: 40px;
-            margin-bottom: 50px;
-            padding-top: 7vh;
+                font-size: 40px;
+                margin-bottom: 35px;
+                padding-top: 70px;
             }
         }
 
         .contacto {
-            padding-bottom: 50px;
+            padding-bottom: 70px;
 
             .contactoH {
                 p {
                     font-size: 16px;
                     margin-bottom: -10px;
-                    padding: 10vh 10px 0 10px;
+                    padding: 70px 10px 0 10px;
                 }
 
                 h2 {
@@ -487,22 +522,9 @@
             padding-bottom: 6px;
         }
 
-        .divFooter2 {
+        .divFooter2, .divFooter3 {
             align-self: flex-start;
-            margin-left: 21%;
-
-            h3 {
-                font-size: 18px;
-            }
-            
-            ul li a {
-                font-size: 15px;
-            }
-        }
-
-        .divFooter3 {
-            align-self: flex-start;
-            margin-left: 21%;
+            margin-left: 23%;
 
             h3 {
                 font-size: 18px;

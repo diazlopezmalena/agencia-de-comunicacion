@@ -681,33 +681,48 @@ header {
 
 /* MEDIA QUERY - TABLET y DESKTOP S */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  header .bg-dark {
-    height: auto; }
-  header nav div a img {
-    width: 50px;
-    margin-left: 0px; }
-  header .bg-dark .navBsUl {
-    font-size: 16px; }
-    header .bg-dark .navBsUl a:hover {
-      border-top: solid 3px transparent; }
+  /* Cabecera plegable */
+  .menuScroll {
+    transition: transform 0.4s;
+    background-color: black; }
+  .scroll-up header {
+    transform: none; }
+  .scroll-down header {
+    transform: translate3d(0, -100%, 0); }
+  header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    transition: transform 0.4s; }
+    header nav div a img {
+      width: 50px;
+      margin-left: 0px; }
+    header .bg-dark {
+      height: 70px; }
+      header .bg-dark .navBsUl {
+        font-size: 16px; }
+        header .bg-dark .navBsUl a:hover {
+          border-top: solid 3px transparent; }
   .mainHome {
-    grid-template-rows: 400px auto auto auto auto; }
-    .mainHome .presentacionContenedor .presentacionH p {
-      font-size: 35px;
-      margin-left: -5px;
-      margin-bottom: -13px; }
-    .mainHome .presentacionContenedor .presentacionH h1 {
-      font-size: 45px; }
-    .mainHome .presentacionContenedor .presentacionH .presentacionP {
-      width: auto;
-      bottom: auto; }
-      .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPGif {
-        width: 60px;
-        padding-left: 3px; }
-      .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPsubtitulo {
-        font-size: 13px;
-        line-height: 1.4;
-        padding: 0px 0px 15px 15px; }
+    grid-template-rows: 500px auto auto auto auto; }
+    .mainHome .presentacionContenedor {
+      padding-top: 70px; }
+      .mainHome .presentacionContenedor .presentacionH p {
+        font-size: 35px;
+        margin-left: -5px;
+        margin-bottom: -13px; }
+      .mainHome .presentacionContenedor .presentacionH h1 {
+        font-size: 45px; }
+      .mainHome .presentacionContenedor .presentacionH .presentacionP {
+        width: auto;
+        bottom: auto; }
+        .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPGif {
+          width: 60px;
+          padding-left: 3px; }
+        .mainHome .presentacionContenedor .presentacionH .presentacionP #presentacionPsubtitulo {
+          font-size: 13px;
+          line-height: 1.4;
+          padding: 0px 0px 15px 15px; }
     .mainHome #servicios .services {
       display: none; }
     .mainHome #servicios .serviciosMobile {
@@ -796,30 +811,44 @@ header {
 
 /* MEDIA QUERY - MOBILE */
 @media only screen and (max-width: 600px) {
-  header .bg-dark {
-    height: auto; }
-  header nav div a img {
-    width: 14vw;
-    margin-left: 0px; }
-  header .bg-dark .navBsUl {
-    font-size: 16px; }
-    header .bg-dark .navBsUl a:hover {
-      border-top: solid 3px transparent; }
+  /* Cabecera plegable */
+  .menuScroll {
+    transition: transform 0.4s;
+    background-color: black; }
+  .scroll-up header {
+    transform: none; }
+  .scroll-down header {
+    transform: translate3d(0, -100%, 0); }
+  header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    transition: transform 0.4s; }
+    header nav div a img {
+      width: 14vw;
+      margin-left: 0px; }
+    header .bg-dark {
+      height: 70px; }
+      header .bg-dark .navBsUl {
+        font-size: 16px; }
+        header .bg-dark .navBsUl a:hover {
+          border-top: solid 3px transparent; }
   .mainHome {
-    grid-template-rows: 85vh auto auto auto auto; }
+    grid-template-rows: 99vh auto auto auto auto; }
     .mainHome .presentacionContenedor {
       align-content: flex-start;
-      padding: 0px; }
+      padding: 0px;
+      margin-top: 70px; }
       .mainHome .presentacionContenedor .presentacionH {
         width: 85%;
         height: 50%;
         padding-top: 30px; }
         .mainHome .presentacionContenedor .presentacionH p {
-          font-size: 9.5vw;
+          font-size: 30px;
           margin-left: -5px;
           margin-bottom: -13px; }
         .mainHome .presentacionContenedor .presentacionH h1 {
-          font-size: 10.5vw; }
+          font-size: 40px; }
         .mainHome .presentacionContenedor .presentacionH .presentacionP {
           margin-top: 10px;
           bottom: auto;
@@ -845,10 +874,10 @@ header {
     .mainHome #servicios .serviciosMobile {
       display: block;
       padding: 10px;
-      margin-bottom: 40px; }
+      margin-bottom: 60px; }
       .mainHome #servicios .serviciosMobile .hSeccion {
         font-size: 40px;
-        padding: 13vh 0px 11vh 0px; }
+        padding: 70px 0px 35px 0px; }
       .mainHome #servicios .serviciosMobile .accordion-item {
         border-color: #2a2a2a;
         box-shadow: #363636 0px 0px 10px;
@@ -889,14 +918,14 @@ header {
         background-color: black;
         color: white; }
     .mainHome .adn {
-      padding-top: 20px; }
+      padding-bottom: 70px; }
       .mainHome .adn .tituloAdn {
         font-size: 40px;
-        margin-bottom: -30px;
-        padding-top: 6vh; }
+        margin-bottom: -27px;
+        margin-top: 70px; }
       .mainHome .adn .tituloAdn2 {
         font-size: 50px;
-        margin-bottom: 6vh; }
+        margin-bottom: 35px; }
       .mainHome .adn div .card {
         width: 90%;
         margin: 20px;
@@ -914,14 +943,14 @@ header {
       margin-bottom: 0px; }
       .mainHome .clients h2 {
         font-size: 40px;
-        margin-bottom: 50px;
-        padding-top: 7vh; }
+        margin-bottom: 35px;
+        padding-top: 70px; }
     .mainHome .contacto {
-      padding-bottom: 50px; }
+      padding-bottom: 70px; }
       .mainHome .contacto .contactoH p {
         font-size: 16px;
         margin-bottom: -10px;
-        padding: 10vh 10px 0 10px; }
+        padding: 70px 10px 0 10px; }
       .mainHome .contacto .contactoH h2 {
         font-size: 40px; }
       .mainHome .contacto .contactoVias {
@@ -950,17 +979,10 @@ header {
     .divFooter .divFooter1 a img {
       width: 30px;
       padding-bottom: 6px; }
-    .divFooter .divFooter2 {
+    .divFooter .divFooter2, .divFooter .divFooter3 {
       align-self: flex-start;
-      margin-left: 21%; }
-      .divFooter .divFooter2 h3 {
+      margin-left: 23%; }
+      .divFooter .divFooter2 h3, .divFooter .divFooter3 h3 {
         font-size: 18px; }
-      .divFooter .divFooter2 ul li a {
-        font-size: 15px; }
-    .divFooter .divFooter3 {
-      align-self: flex-start;
-      margin-left: 21%; }
-      .divFooter .divFooter3 h3 {
-        font-size: 18px; }
-      .divFooter .divFooter3 ul li a {
+      .divFooter .divFooter2 ul li a, .divFooter .divFooter3 ul li a {
         font-size: 15px; } }
