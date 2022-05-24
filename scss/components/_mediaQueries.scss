@@ -69,7 +69,7 @@
 
                 .hSeccion {
                     font-size: 40px;
-                    margin: 30px 0px;
+                    padding: 12vh 0px 40px 0px;
                 }
 
                 .accordion-item {
@@ -141,10 +141,12 @@
 
             .tituloAdn {
                 font-size: 35px;
+                padding-top: 6vh;
             }
     
             .tituloAdn2 {
                 font-size: 50px;
+                padding-bottom: 20px;
             }
 
             div {
@@ -170,14 +172,24 @@
             }
         }
 
-        .clients h2 {
-            font-size: 50px;
+        .clients { 
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+
+            h2 {
+                font-size: 50px;
+                padding-top: 6vh;
+            }
         }
 
         .contacto {
 
-            .contactoH h2 {
-                font-size: 50px;
+            .contactoH {
+                padding-top: 10vh;
+                
+                h2 {
+                    font-size: 50px;
+                }
             }
 
             .contactoVias {
@@ -241,13 +253,13 @@
                 padding-top: 30px;
 
                 p {                    
-                    font-size: 30px;
+                    font-size: 9.5vw;
                     margin-left: -5px;
                     margin-bottom: -13px;
                 }
 
                 h1 {
-                    font-size: 40px;
+                    font-size: 10.5vw;
                 }
 
                 .presentacionP {
@@ -271,7 +283,8 @@
             .presentacionDescarga {
                 width: 85%;
                 padding: 0px;
-                margin-top: 10px;
+                margin-top: 2vh;
+                height: 45%;
 
                 .presentacionDescargaGif {
                     width: 85%;
@@ -295,7 +308,7 @@
 
                 .hSeccion {
                     font-size: 40px;
-                    margin: 30px 0px;
+                    padding: 13vh 0px 11vh 0px;
                 }
 
                 .accordion-item {
@@ -369,11 +382,12 @@
             .tituloAdn{
                 font-size: 40px;
                 margin-bottom: -30px;
+                padding-top: 6vh;
             }
     
             .tituloAdn2 {
                 font-size: 50px;
-                margin-bottom: 20px;
+                margin-bottom: 6vh;
             }
 
             div {
@@ -401,9 +415,15 @@
             }
         }
 
-        .clients h2 {
+        .clients { 
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            
+            h2 {
             font-size: 40px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            padding-top: 7vh;
+            }
         }
 
         .contacto {
@@ -413,6 +433,7 @@
                 p {
                     font-size: 16px;
                     margin-bottom: -10px;
+                    padding: 10vh 10px 0 10px;
                 }
 
                 h2 {
@@ -461,11 +482,34 @@
         grid-row-gap: 30px;
         padding-top: 50px;
 
-        .divFooter1 {
-            a {    
-                img {
-                    width: 30px;
-                }
+        .divFooter1 a img {
+            width: 30px;
+            padding-bottom: 6px;
+        }
+
+        .divFooter2 {
+            align-self: flex-start;
+            margin-left: 21%;
+
+            h3 {
+                font-size: 18px;
+            }
+            
+            ul li a {
+                font-size: 15px;
+            }
+        }
+
+        .divFooter3 {
+            align-self: flex-start;
+            margin-left: 21%;
+
+            h3 {
+                font-size: 18px;
+            }
+            
+            ul li a {
+                font-size: 15px;
             }
         }
     }

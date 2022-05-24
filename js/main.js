@@ -11,12 +11,16 @@ $(document).ready(function(){
         responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToShow: 4
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                autoplaySpeed: 3000
             }
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplaySpeed: 3000
             }
         }]
     });

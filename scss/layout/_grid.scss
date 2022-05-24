@@ -108,10 +108,10 @@
 
     /** Sevicios **/
     #servicios {
-        grid-area: servicios;
+        grid-area: servicios;        
 
         .services {
-            padding: 30px 10px;
+            padding: 0px 10px 30px 10px;
             background-color: black;
             display: grid;
             grid-template-columns: 23% 23% 23% 23%;
@@ -126,7 +126,7 @@
         
             h2 {
                 grid-area: encabezado;
-                margin: 40px;
+                padding: 10vh 0px 25px 0px;
             }
 
             /*** Sevicios: animaciones ***/
@@ -428,7 +428,7 @@
             color: rgba(255, 255, 255, 0.605);
             font-size: 4vw;
             font-style: italic;
-            margin: 4vw 0% -2.5vw -4vw;
+            margin: 4vw 0 -2.5vw -4vw;
         }
 
         .tituloAdn2 {
@@ -436,6 +436,7 @@
             font-size: 5vw;
             color: black;
             font-family: $font-principal;
+            padding-bottom: 1vw;
         }
 
         div {
@@ -495,6 +496,7 @@
     
         .contactoH {
             text-align: center;
+            padding-top: 6vh;
 
             p {
                 font-family: $font-secundaria;

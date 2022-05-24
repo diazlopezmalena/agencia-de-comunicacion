@@ -69,7 +69,7 @@ header {
 .whatsappfijo {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 15px;
   z-index: 19;
   background-color: transparent;
   border: none; }
@@ -199,7 +199,7 @@ header {
   .mainHome #servicios {
     grid-area: servicios; }
     .mainHome #servicios .services {
-      padding: 30px 10px;
+      padding: 0px 10px 30px 10px;
       background-color: black;
       display: grid;
       grid-template-columns: 23% 23% 23% 23%;
@@ -213,7 +213,7 @@ header {
       /*** Sevicios: cards y hover ***/ }
       .mainHome #servicios .services h2 {
         grid-area: encabezado;
-        margin: 40px; }
+        padding: 10vh 0px 25px 0px; }
       .mainHome #servicios .services p, .mainHome #servicios .services h3 {
         transition: all 100ms; }
 
@@ -353,12 +353,13 @@ header {
       color: rgba(255, 255, 255, 0.605);
       font-size: 4vw;
       font-style: italic;
-      margin: 4vw 0% -2.5vw -4vw; }
+      margin: 4vw 0 -2.5vw -4vw; }
     .mainHome .adn .tituloAdn2 {
       margin-left: 7vw;
       font-size: 5vw;
       color: black;
-      font-family: "Plus Jakarta Sans", sans-serif; }
+      font-family: "Plus Jakarta Sans", sans-serif;
+      padding-bottom: 1vw; }
     .mainHome .adn div {
       display: flex;
       justify-content: center;
@@ -400,7 +401,8 @@ header {
     align-items: center;
     padding: 30px 0px 89px 0px; }
     .mainHome .contacto .contactoH {
-      text-align: center; }
+      text-align: center;
+      padding-top: 6vh; }
       .mainHome .contacto .contactoH p {
         font-family: "Times New Roman", Times, serif;
         color: white;
@@ -445,9 +447,9 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 2vw 0vw 5vw 0vw; }
+  margin: 2vw 0vw 1vw 0vw; }
   .clients h2 {
-    margin-bottom: 60px; }
+    padding: 3vh 0 10vh 0; }
   .clients .container {
     min-width: 100%; }
 
@@ -714,7 +716,7 @@ header {
       margin: 0px 70px 40px 70px; }
       .mainHome #servicios .serviciosMobile .hSeccion {
         font-size: 40px;
-        margin: 30px 0px; }
+        padding: 12vh 0px 40px 0px; }
       .mainHome #servicios .serviciosMobile .accordion-item {
         border-color: #2a2a2a;
         box-shadow: #363636 0px 0px 10px;
@@ -755,9 +757,11 @@ header {
         background-color: black;
         color: white; }
     .mainHome .adn .tituloAdn {
-      font-size: 35px; }
+      font-size: 35px;
+      padding-top: 6vh; }
     .mainHome .adn .tituloAdn2 {
-      font-size: 50px; }
+      font-size: 50px;
+      padding-bottom: 20px; }
     .mainHome .adn div .card {
       margin: 0px 5px;
       height: auto;
@@ -768,10 +772,16 @@ header {
         font-size: 17px; }
       .mainHome .adn div .card p {
         font-size: 15px; }
-    .mainHome .clients h2 {
-      font-size: 50px; }
-    .mainHome .contacto .contactoH h2 {
-      font-size: 50px; }
+    .mainHome .clients {
+      padding-bottom: 0px;
+      margin-bottom: 0px; }
+      .mainHome .clients h2 {
+        font-size: 50px;
+        padding-top: 6vh; }
+    .mainHome .contacto .contactoH {
+      padding-top: 10vh; }
+      .mainHome .contacto .contactoH h2 {
+        font-size: 50px; }
     .mainHome .contacto .contactoVias {
       margin-bottom: 10px; }
       .mainHome .contacto .contactoVias .contactoViasItem {
@@ -805,11 +815,11 @@ header {
         height: 50%;
         padding-top: 30px; }
         .mainHome .presentacionContenedor .presentacionH p {
-          font-size: 30px;
+          font-size: 9.5vw;
           margin-left: -5px;
           margin-bottom: -13px; }
         .mainHome .presentacionContenedor .presentacionH h1 {
-          font-size: 40px; }
+          font-size: 10.5vw; }
         .mainHome .presentacionContenedor .presentacionH .presentacionP {
           margin-top: 10px;
           bottom: auto;
@@ -824,7 +834,8 @@ header {
       .mainHome .presentacionContenedor .presentacionDescarga {
         width: 85%;
         padding: 0px;
-        margin-top: 10px; }
+        margin-top: 2vh;
+        height: 45%; }
         .mainHome .presentacionContenedor .presentacionDescarga .presentacionDescargaGif {
           width: 85%;
           height: auto;
@@ -837,7 +848,7 @@ header {
       margin-bottom: 40px; }
       .mainHome #servicios .serviciosMobile .hSeccion {
         font-size: 40px;
-        margin: 30px 0px; }
+        padding: 13vh 0px 11vh 0px; }
       .mainHome #servicios .serviciosMobile .accordion-item {
         border-color: #2a2a2a;
         box-shadow: #363636 0px 0px 10px;
@@ -881,10 +892,11 @@ header {
       padding-top: 20px; }
       .mainHome .adn .tituloAdn {
         font-size: 40px;
-        margin-bottom: -30px; }
+        margin-bottom: -30px;
+        padding-top: 6vh; }
       .mainHome .adn .tituloAdn2 {
         font-size: 50px;
-        margin-bottom: 20px; }
+        margin-bottom: 6vh; }
       .mainHome .adn div .card {
         width: 90%;
         margin: 20px;
@@ -897,14 +909,19 @@ header {
           font-size: 25px; }
         .mainHome .adn div .card p {
           font-size: 16px; }
-    .mainHome .clients h2 {
-      font-size: 40px;
-      margin-bottom: 40px; }
+    .mainHome .clients {
+      padding-bottom: 0px;
+      margin-bottom: 0px; }
+      .mainHome .clients h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+        padding-top: 7vh; }
     .mainHome .contacto {
       padding-bottom: 50px; }
       .mainHome .contacto .contactoH p {
         font-size: 16px;
-        margin-bottom: -10px; }
+        margin-bottom: -10px;
+        padding: 10vh 10px 0 10px; }
       .mainHome .contacto .contactoH h2 {
         font-size: 40px; }
       .mainHome .contacto .contactoVias {
@@ -931,4 +948,19 @@ header {
     grid-row-gap: 30px;
     padding-top: 50px; }
     .divFooter .divFooter1 a img {
-      width: 30px; } }
+      width: 30px;
+      padding-bottom: 6px; }
+    .divFooter .divFooter2 {
+      align-self: flex-start;
+      margin-left: 21%; }
+      .divFooter .divFooter2 h3 {
+        font-size: 18px; }
+      .divFooter .divFooter2 ul li a {
+        font-size: 15px; }
+    .divFooter .divFooter3 {
+      align-self: flex-start;
+      margin-left: 21%; }
+      .divFooter .divFooter3 h3 {
+        font-size: 18px; }
+      .divFooter .divFooter3 ul li a {
+        font-size: 15px; } }
